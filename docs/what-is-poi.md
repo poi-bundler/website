@@ -7,7 +7,7 @@ Poi is a bundler for web applications, essentially it's just a webpack wrapper w
 
 Oh and it allows you to reuse configurations, extend core features via `plugin`.
 
-## Compare with Parcel
+## Compare to Parcel
 
 > If webpack can be zero-config then why choose Parcel?
 >
