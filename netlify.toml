@@ -1,4 +1,4 @@
 [build]
   base    = "website"
-  publish = "website/build"
+  publish = "website/build/Poi"
   command = "npm run build"
