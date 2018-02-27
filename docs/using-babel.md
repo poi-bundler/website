@@ -3,7 +3,7 @@ id: using-babel
 title: Using Babel
 ---
 
-Poi uses [babel-preset-ream](https://github.com/egoist/poi/blob/master/packages/babel-preset-poi/README.md) which includes following features:
+Poi uses [babel-preset-poi](https://github.com/egoist/poi/blob/master/packages/babel-preset-poi/README.md) which includes following features:
 
 - JSX (React / Vue / Custom)
 - babel-preset-env (IE9+)
