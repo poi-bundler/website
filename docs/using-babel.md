@@ -14,15 +14,13 @@ Poi uses [babel-preset-poi](https://github.com/egoist/poi/blob/master/packages/b
 - decorators-legacy
 - class-properties
 
-Please note that Poi supports Vue JSX by default, but you can change it to React JSX or any JSX pragma by using the `babel` option in config file:
-
-[TODO]
+Please note that Poi supports React JSX by default, but you can change it to Vue JSX or any JSX pragma by using the `babel` option in config file:
 
 ```js
 module.exports = {
   babel: {
-    // React JSX
-    jsx: 'react',
+    // Vue JSX
+    jsx: 'vue',
     // Or `h` for preact
     jsx: 'h'
   }
@@ -36,7 +34,8 @@ A module inside `node_modules` won't be transpiled by Babel, but you can still t
 ```js
 module.exports = {
   babel: {
-    include: ['/element-ready/']
+    // Include certain module names
+    include: ['element-ready']
   }
 }
 ```
