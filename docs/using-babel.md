@@ -39,3 +39,7 @@ module.exports = {
   }
 }
 ```
+
+## Using `.babelrc`
+
+Poi will respect `.babelrc` or any kind of babel config file in current working directory (`process.cwd()`). It will use this file instead of the default `babel-preset-poi` when it's present.

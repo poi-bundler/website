@@ -1,7 +1,7 @@
 {
   "docs": {
-    "Introduction": ["what-is-poi"],
-    "Guides": ["using-babel"],
+    "Introduction": ["what-is-poi", "getting-started"],
+    "Guides": ["using-babel", "using-css", "hot-reloading"],
     "Second Category": ["doc3"]
   },
   "docs-other": {

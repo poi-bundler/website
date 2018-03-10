@@ -23,7 +23,6 @@ const siteConfig = {
   projectName: 'Poi',
   headerLinks: [
     {doc: 'what-is-poi', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
   ],

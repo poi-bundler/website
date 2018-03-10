@@ -3,9 +3,9 @@ id: what-is-poi
 title: What is Poi?
 ---
 
-Poi is a bundler for web applications, essentially it's just a webpack wrapper which improves developer experience by abstracting away a lot of configurations and providing better logs.
+Poi is a bundler for web applications, essentially it's just a webpack wrapper which improves developer experience by abstracting away a lot of configurations for best practices.
 
-Oh and it allows you to reuse configurations, extend core features via `plugin`.
+Oh and it allows you to reuse configurations by extending core features via `plugin`.
 
 ## Compare to Parcel
 
