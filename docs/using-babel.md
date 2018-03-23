@@ -6,7 +6,7 @@ title: Using Babel
 Poi uses [babel-preset-poi](https://github.com/egoist/poi/blob/master/packages/babel-preset-poi/README.md) which includes following features:
 
 - JSX (React / Vue / Custom)
-- babel-preset-env (IE9+)
+- babel-preset-env (IE9+ or `node: 'current'` in test env)
 - babel-macros
 - transform-runtime
 - dynamic-import
@@ -26,6 +26,8 @@ module.exports = {
   }
 }
 ```
+
+However it's recommended to use `.babelrc` for this so that other tools like ESLint can use the same config.
 
 ## Transpile modules in `node_modules`
 
