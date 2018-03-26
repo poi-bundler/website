@@ -40,7 +40,7 @@ Controlling how to transform JSX.
 
 |Default|CLI override|API override|
 |---|---|---|
-|`react`|`--jsx <string>`|`babel.jsx: string`|
+|`react`|`--babel.jsx <string>`|`babel.jsx: string`|
 
 > __WARN__: note that this only works if you __DON'T__ use a custom babel config file.
 
