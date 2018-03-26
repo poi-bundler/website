@@ -9,7 +9,7 @@ The entry file of your project.
 
 |Default|CLI override|API override|
 |---|---|---|
-|`index.js`|`poi [entry]`|`entry: string string[] object`|
+|`index.js`|`poi [entry]`|<code>entry: string&#124;string[]&#124;object</code>|
 
 ## Output directory
 
@@ -59,3 +59,9 @@ Load `.env` file from current working directory, the defined env variables are a
 |Default|CLI override|API override|
 |---|---|---|
 |`true`|<code>--dot-env <string&#124;boolean></code>|<code>dotEnv: string&#124;boolean</code>|
+
+## Minimize bundle
+
+|Default|CLI override|API override|
+|---|---|---|
+|`true` in `poi build`, `false` otherwise|`-m/--minimize`|`minimize: boolean`|
