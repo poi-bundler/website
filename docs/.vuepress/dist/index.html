@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Poi</title>
+    
+    
+    <link rel="preload" href="/assets/css/1.styles.9d352a52.css" as="style"><link rel="preload" href="/assets/js/app.43bda290.js" as="script"><link rel="preload" href="/assets/js/0.5939816b.js" as="script">
+    <link rel="stylesheet" href="/assets/css/1.styles.9d352a52.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-navbar no-sidebar"><!----><div class="sidebar"><!----><ul class="sidebar-links"><li><a href="/" class="active sidebar-link">Poi</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/#introduction" class="sidebar-link">Introduction</a></li></ul></li></ul></div><div class="page"><div class="content"><h1 id="poi"><a href="#poi" aria-hidden="true" class="header-anchor">#</a> Poi</h1><h2 id="introduction"><a href="#introduction" aria-hidden="true" class="header-anchor">#</a> Introduction</h2><p>Poi is a <strong>zero-config</strong> bundler built on the top of webpack. By using the buzz word <code>zero-config</code>, it does not mean that there’s no config, instead we pre-configurared many things for you. To prevent Poi from becoming too bloated to use, we also introduced some kind of <code>plugin</code> system to make extra features opt-in.</p><p>To get a quick taste of Poi, you can install it globally via npm or yarn:</p><pre class="language-bash"><code>$ <span class="token function">npm</span> i -g poi
+<span class="token comment"># But it's recommended to install it locally for real-world projects.</span>
+<span class="token comment"># i.e. cd your-project &amp;&amp; npm i poi -D</span>
+</code></pre><p>The <code>poi</code> command is somehow similar to <code>node</code>, by running <code>poi</code> in a directory, it will use <code>index.js</code> or the file specified at <code>main</code> field in <code>package.json</code> as entry file of your application.</p><pre class="language-bash"><code><span class="token comment"># Use `index.js` or `pkg.main`</span>
+$ poi
+</code></pre><p>Then your application will be running at <code>http://localhost:4000</code></p><img src="https://i.loli.net/2018/03/27/5ab9f9699682b.png" width="400" alt="preview"><p>In most cases, you don’t need to configure anything to make your app work with Poi, since Poi has great built-in support for:</p><ul><li>Babel, transform widely used ES next features to ES5, including JSX</li><li>PostCSS, and a bunch of popular CSS pre-processors like Sass</li><li>Vue, no config is required for your Vue applications</li><li>etc…</li></ul></div><!----><!----></div></div></div>
+    <script src="/assets/js/0.5939816b.js" defer></script><script src="/assets/js/app.43bda290.js" defer></script>
+  </body>
+</html>

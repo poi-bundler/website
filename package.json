@@ -1,0 +1,15 @@
+{
+  "name": "poi-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:poi-bundler/website.git",
+  "author": "EGOIST <0x142857@gmail.com>",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "vuejs/vuepress"
+  }
+}
