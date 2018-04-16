@@ -11,7 +11,8 @@ module.exports = {
           '/guide/transforms',
           '/guide/hot-reloading'
         ]
-      }
+      },
+      '/options'
     ],
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
