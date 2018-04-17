@@ -24,6 +24,17 @@ The entry file of your app.
 
 The output directory of bundled files.
 
+### cleanOutDir
+
+- __Type__: `boolean`
+- __CLI flags__: `--clean-out-dir`
+
+Clean the output directory before bundling. 
+
+::: warning
+We will always clean the output directory when output filename contains [hash](#hash).
+:::
+
 ### publicPath
 
 - __Type__: `string`

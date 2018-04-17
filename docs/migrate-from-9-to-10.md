@@ -59,7 +59,7 @@ This option is also removed.
 
 ### removeDist
 
-[TODO]
+[removeDist](https://poi9.netlify.com/#/options?id=removedist) is now [cleanOutDir](/options.md#cleanoutdir).
 
 ### library
 
