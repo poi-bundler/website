@@ -20,6 +20,7 @@ module.exports = {
       { text: 'GitHub', link: 'https://github.com/egoist/poi' },
     ],
     editLinks: true,
-    repo: 'poi-bundler/website'
+    repo: 'poi-bundler/website',
+    docsDir: 'docs'
   }
 }
