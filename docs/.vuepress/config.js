@@ -16,8 +16,7 @@ module.exports = {
       '/migrate-from-9-to-10'
     ],
     nav: [
-      { text: 'Guide', link: '/guide/getting-started' },
-      { text: 'GitHub', link: 'https://github.com/egoist/poi' },
+      { text: 'Guide', link: '/guide/getting-started' }
     ],
     editLinks: true,
     repo: 'poi-bundler/website',
