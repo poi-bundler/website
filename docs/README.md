@@ -1,5 +1,7 @@
 ---
 home: true
+actionText: Get Started →
+actionLink: /guide/getting-started
 features:
   - title: Config-free
     details: Develop powerful web app with no build configs until you need.
