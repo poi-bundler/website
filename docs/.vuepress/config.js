@@ -18,6 +18,8 @@ module.exports = {
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
       { text: 'GitHub', link: 'https://github.com/egoist/poi' },
-    ]
+    ],
+    editLinks: true,
+    repo: 'poi-bundler/website'
   }
 }
