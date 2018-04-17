@@ -63,11 +63,11 @@ This option is also removed.
 
 ### library
 
-[TODO]
+[library](https://poi9.netlify.com/#/options?id=library) option is removed.
 
 ### vendor
 
-[TODO]
+[vendor](https://poi9.netlify.com/#/options?id=vendor) option is removed. We will automatically disable vendor code splitting when your `format` is set to `cjs` or `umd`.
 
 ### extendWebpack
 
