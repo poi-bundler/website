@@ -31,7 +31,7 @@ Third-party plugins follow the `poi-plugin-name` naming convention.
 
 ### transformModules
 
-[transformModules](https://poi9.netlify.com/#/options?id=transformmodules) is now [babel.include](/options.md#include) and is renamed to `include`.
+[transformModules](https://poi9.netlify.com/#/options?id=transformmodules) is now [babel.include](/options.md#include).
 
 ### postcss
 
