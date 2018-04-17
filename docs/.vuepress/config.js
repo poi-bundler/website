@@ -12,7 +12,8 @@ module.exports = {
           '/guide/hot-reloading'
         ]
       },
-      '/options'
+      '/options',
+      '/migrate-from-9-to-10'
     ],
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
