@@ -10,4 +10,8 @@ features:
 footer: MIT Licensed | Copyright © 2016-present EGOIST
 ---
 
+::: warning
+This is the website for Poi v10.
 
+For the docs of Poi v9, please go to [https://poi9.netlify.com](https://poi9.netlify.com).
+:::
