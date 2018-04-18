@@ -19,7 +19,7 @@ yarn add poi --dev
 npm i poi -D
 ```
 
-The locally install `poi` command will be available at `./node_modules/.bin/poi` in your project.
+The locally installed `poi` command will be available at `./node_modules/.bin/poi` in your project.
 
 `node_modules/.bin` directory will be added to system `$PATH` when your're running npm scripts. So you can directly use the local `poi` command there:
 
