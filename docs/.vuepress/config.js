@@ -8,6 +8,7 @@ module.exports = {
         collapsable: false,
         children: [
           '/guide/getting-started',
+          '/guide/installation',
           '/guide/transforms',
           '/guide/hot-reloading',
           '/guide/html-template-file',
