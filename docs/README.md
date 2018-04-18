@@ -17,3 +17,37 @@ This is the website for Poi v10.
 
 For the docs of Poi v9, please go to [https://poi9.netlify.com](https://poi9.netlify.com).
 :::
+
+## Hello World
+
+Start writing application with a `index.js`, without any configurations:
+
+📝 index.js
+
+```js
+// import another module
+import main from './main'
+
+main()
+```
+
+📝 main.js
+
+```js
+// Files ending with `.module.css` with be imported as CSS modules
+import styles from './styles.module.css'
+
+export default () => {
+  console.log(styles.main)
+}
+```
+
+📝 styles.module.css
+
+```css
+.main {
+  color: red;
+  /* Reference images */
+  background-image: url('./images/main.png')
+}
+```
