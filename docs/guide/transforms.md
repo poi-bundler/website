@@ -65,7 +65,7 @@ By default we don't use any PostCSS plugins, feel free to add `postcss.config.js
 For these preprocessors to work, you need to install loader and compiler:
 
 - Sass: `yarn add node-sass sass-loader --dev`
-- Stylus: `yarn add stylus stylus-loader`
+- Stylus: `yarn add stylus stylus-loader --dev`
 - Less: `yarn add less less-loader --dev`
 
 ### CSS modules
