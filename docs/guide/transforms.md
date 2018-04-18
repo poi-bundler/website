@@ -103,3 +103,57 @@ To use Sass/Stylus/Less, you need to set the `lang` attribute:
 
 <style lang="stylus" src="./external/style.styl">
 ```
+
+## GraphQL
+
+GraphQL file is automatically transformed by [graphql-tag/loader](https://github.com/apollographql/graphql-tag).
+
+## Reason / OCaml
+
+
+Poi uses [BuckleScript](https://bucklescript.github.io/) to compile Reason/Ocaml to JavaScript.
+
+You need to install bs-platform and create a bsconfig.json in your project:
+
+```bash
+yarn add bs-platform --dev
+```
+
+[Sample `bsconfig.json`](https://github.com/BuckleScript/bucklescript/blob/master/jscomp/bsb/templates/basic-reason/bsconfig.json):
+
+```json
+{
+  "name": "whatever",
+  "sources": {
+    "dir": "src",
+    "subdirs": true
+  },
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+  ],
+  "warnings": {
+    "error": "+101"
+  },
+  "namespace": true,
+  "refmt": 3
+}
+```
+
+📝 __src/index.js__:
+
+```js
+import { sum } from './sum.re'
+
+console.log(sum(1, 2))
+//=> 3
+```
+
+📝 __src/sum.re__:
+
+```reason
+let sum = (x, y) => x + y;
+```

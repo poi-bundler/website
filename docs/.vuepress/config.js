@@ -9,7 +9,9 @@ module.exports = {
         children: [
           '/guide/getting-started',
           '/guide/transforms',
-          '/guide/hot-reloading'
+          '/guide/hot-reloading',
+          '/guide/html-template-file',
+          '/guide/update-webpack-config'
         ]
       },
       '/options',
