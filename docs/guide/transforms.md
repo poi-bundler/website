@@ -141,6 +141,8 @@ const options: Options = {
 export default options
 ```
 
+Check out the [example repo](https://github.com/poi-examples/vue-ts-example) on GitHub.
+
 ## GraphQL
 
 GraphQL file is automatically transformed by [graphql-tag/loader](https://github.com/apollographql/graphql-tag).
