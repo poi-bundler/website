@@ -15,6 +15,13 @@ module.exports = {
           '/guide/update-webpack-config'
         ]
       },
+      {
+        title: 'Plugins',
+        collapsable: false,
+        children: [
+          '/plugins/vue-static'
+        ]
+      },
       '/options',
       '/migrate-from-9-to-10'
     ],
