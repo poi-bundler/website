@@ -19,7 +19,8 @@ module.exports = {
         title: 'Plugins',
         collapsable: false,
         children: [
-          '/plugins/vue-static'
+          '/plugins/vue-static',
+          '/plugins/typescript'
         ]
       },
       '/options',
