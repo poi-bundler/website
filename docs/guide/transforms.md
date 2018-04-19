@@ -104,6 +104,43 @@ To use Sass/Stylus/Less, you need to set the `lang` attribute:
 <style lang="stylus" src="./external/style.styl">
 ```
 
+## TypeScript
+
+Use [@poi/plugin-typescript](https://github.com/egoist/poi/tree/master/packages/plugin-typescript) for TypeScript support:
+
+```bash
+yarn add typescript @poi/plugin-typescript --dev
+```
+
+📝 __poi.config.js__:
+
+```js
+module.exports = {
+  plugins: [
+    require('@poi/plugin-typescript')()
+  ]
+}
+```
+
+Also make sure you have `tsconfig.json` in your project.
+
+Optionally you can even write Poi config in TypeScript, just install `ts-node` in your project and use `poi.config.ts` instead:
+
+📝 __poi.config.ts__:
+
+```typescript
+import { Options } from 'poi'
+
+const options: Options = {
+  entry: 'src/index.ts',
+  plugins: [
+    require('@poi/plugin-typescript')()
+  ]
+}
+
+export default options
+```
+
 ## GraphQL
 
 GraphQL file is automatically transformed by [graphql-tag/loader](https://github.com/apollographql/graphql-tag).
