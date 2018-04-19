@@ -108,7 +108,7 @@ Your app will only be rendered when `prepare` is resolved.
 
 ### Manipulating `<head>`
 
-In any route component, do:
+In any Vue component, do:
 
 ```js
 export default {
