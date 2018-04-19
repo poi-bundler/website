@@ -47,7 +47,7 @@ App code changes:
 
 📝 __index.js__:
 
-```js
+```js{7,12}
 import Vue from 'vue'
 import router from './router'
 import App from './App.vue'
@@ -64,7 +64,7 @@ export default app
 
 📝 __App.vue__:
 
-```vue
+```vue{3}
 <template>
   <!-- The id of outermost element must be set to `app` -->
   <div id="app">
@@ -75,7 +75,7 @@ export default app
 
 📝 __router.js__:
 
-```js
+```js{8}
 import Vue from 'vue'
 import Router from 'vue-router'
 
