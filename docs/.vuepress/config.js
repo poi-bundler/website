@@ -20,7 +20,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/plugins/vue-static',
-          '/plugins/typescript'
+          '/plugins/typescript',
+          '/plugins/svelte'
         ]
       },
       '/options',
