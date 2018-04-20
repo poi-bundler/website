@@ -184,6 +184,21 @@ Output filename for font files.
 
 Output filename for image files.
 
+### staticFolder
+
+- __Type__: `string`
+- __Default__: `static`
+
+The path to static folder, which will be copied to the root of output directory.
+
+e.g. `./static/favicon.ico` will be copied to `./dist/favicon.ico`.
+
+### copy
+
+- __Type__: `Array` (An array of [copy-webpack-options](https://github.com/webpack-contrib/copy-webpack-plugin#patterns))
+
+Copy static files to the root of output directory.
+
 ### vue
 
 #### fullBuild
