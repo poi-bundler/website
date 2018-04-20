@@ -195,7 +195,7 @@ e.g. `./static/favicon.ico` will be copied to `./dist/favicon.ico`.
 
 ### copy
 
-- __Type__: `Array` (An array of [copy-webpack-options](https://github.com/webpack-contrib/copy-webpack-plugin#patterns))
+- __Type__: `Array` (An array of [patterns](https://github.com/webpack-contrib/copy-webpack-plugin#patterns))
 
 Copy static files to the root of output directory.
 
