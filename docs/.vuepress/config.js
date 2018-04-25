@@ -31,7 +31,8 @@ module.exports = {
       { text: 'Guide', link: '/guide/getting-started' }
     ],
     editLinks: true,
-    repo: 'poi-bundler/website',
-    docsDir: 'docs'
+    repo: 'egoist/poi',
+    docsDir: 'docs',
+    docsRepo: 'poi-bundler/website'
   }
 }
