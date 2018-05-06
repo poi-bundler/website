@@ -155,7 +155,7 @@ Output filename for `.js` files.
 - __Default__: `[name].[chunkhash:8].css` in `poi build`, `[name].css` otherwise.
 - __CLI flags__: `--filename.css`
 
-Output filename for `.js` files.
+Output filename for `.css` files.
 
 #### chunk
 
