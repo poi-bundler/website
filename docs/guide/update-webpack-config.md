@@ -32,3 +32,7 @@ module.exports = {
 - `context`
   - `type`: Default to`client`
   - `command:` Current running command, `build` `develop` `test` etc.
+  
+::: warning
+Note that you must manipulate the existing `config` object and return it. i.e `config.push.plugins(new BundleAnalyzerPlugin()); return config`
+:::
