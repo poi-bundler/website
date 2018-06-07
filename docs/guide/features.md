@@ -26,7 +26,7 @@ __What other `.env` files can be used?__
 Files on the left have more priority than files on the right:
 
 - `poi`: `.env.development.local`, `.env.development`, `.env.local`, `.env`
-- `poi build`: `.env.production.local`, .env.production, .env.local, .env
+- `poi build`: `.env.production.local`, `.env.production`, `.env.local`, `.env`
 - `poi test`: `.env.test.local`, `.env.test`, `.env` (note `.env.local` is missing)
 
 ## HTML template file
