@@ -7,11 +7,11 @@ module.exports = {
         title: 'Guide',
         collapsable: false,
         children: [
-          '/guide/getting-started',
           '/guide/installation',
+          '/guide/getting-started',
+          '/guide/features',
           '/guide/transforms',
           '/guide/hot-reloading',
-          '/guide/html-template-file',
           '/guide/update-webpack-config'
         ]
       },

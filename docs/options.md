@@ -109,9 +109,8 @@ When you're bundling in umd [format](#format), you need to set module name so th
 - __CLI flags__: `--env`
 - __CLI only__: ✅
 
-Load `.env.{NODE_ENV}` file from current working directory, the defined env variables will be available in both Node.js process and your application code.
+Load `.env` file from current working directory.
 
-e.g. It will load `.env.development` file in development build or `.env.production` file in production build.
 
 ### define
 
