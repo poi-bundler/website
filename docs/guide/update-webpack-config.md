@@ -22,7 +22,8 @@ module.exports = {
 // poi.config.js
 module.exports = {
   configureWebpack(config, context) {
-    // Do something..
+    // Do something like adding a plugin
+    config.push.plugins(new BundleAnalyzerPlugin());
     // optionally return config
   }
 }
@@ -32,7 +33,3 @@ module.exports = {
 - `context`
   - `type`: Default to`client`
   - `command:` Current running command, `build` `develop` `test` etc.
-  
-::: warning
-Note that you must manipulate the existing `config` object and return it. i.e `config.push.plugins(new BundleAnalyzerPlugin()); return config`
-:::
