@@ -15,20 +15,19 @@ module.exports = {
           '/guide/update-webpack-config'
         ]
       },
-      {
-        title: 'Plugins',
-        collapsable: false,
-        children: [
-          '/plugins/vue-static',
-          '/plugins/typescript',
-          '/plugins/svelte'
-        ]
-      },
       '/options',
       '/migrate-from-9-to-10'
     ],
     nav: [
-      { text: 'Guide', link: '/guide/getting-started' }
+      { text: 'Guide', link: '/guide/getting-started' },
+      {
+        text: 'Plugins',
+        items: [
+          { text: 'TypeScript', link: '/plugins/typescript' },
+          { text: 'Svelte', link: '/plugins/svelte' },
+          { text: 'Vue Static', link: '/plugins/vue-static' }
+        ]
+      }
     ],
     editLinks: true,
     repo: 'egoist/poi',

@@ -1,5 +1,7 @@
 # Transforms
 
+Here's a list of built-in transforms that Poi supports, for other types of files you may need a plugin instead.
+
 ## Babel
 
 Poi uses [babel-preset-poi](https://github.com/egoist/poi/blob/master/packages/babel-preset-poi/README.md) which includes following features:
@@ -104,45 +106,6 @@ To use Sass/Stylus/Less, you need to set the `lang` attribute:
 <style lang="stylus" src="./external/style.styl">
 ```
 
-## TypeScript
-
-Use [@poi/plugin-typescript](https://github.com/egoist/poi/tree/master/packages/plugin-typescript) for TypeScript support:
-
-```bash
-yarn add typescript @poi/plugin-typescript --dev
-```
-
-📝 __poi.config.js__:
-
-```js
-module.exports = {
-  plugins: [
-    require('@poi/plugin-typescript')()
-  ]
-}
-```
-
-Also make sure you have `tsconfig.json` in your project.
-
-Optionally you can even write Poi config in TypeScript, just install `ts-node` in your project and use `poi.config.ts` instead:
-
-📝 __poi.config.ts__:
-
-```typescript
-import { Options } from 'poi'
-
-const options: Options = {
-  entry: 'src/index.ts',
-  plugins: [
-    require('@poi/plugin-typescript')()
-  ]
-}
-
-export default options
-```
-
-Check out the [example repo](https://github.com/poi-examples/vue-ts-example) on GitHub.
-
 ## GraphQL
 
 GraphQL file is automatically transformed by [graphql-tag/loader](https://github.com/apollographql/graphql-tag).
@@ -196,3 +159,27 @@ console.log(sum(1, 2))
 ```reason
 let sum = (x, y) => x + y;
 ```
+
+### Pug
+
+To import `.pug` files, you should have `pug-loader` and `pug` installed in your project:
+
+```bash
+yarn add pug-loader pug --dev
+```
+
+Then you can use it like this:
+
+```js
+import template from './file.pug'
+
+const html = template({/* locals */})
+```
+
+To use `pug` in `<template>` block in `.vue` file, you need to install `pug-plain-loader` instead:
+
+```bash
+yarn add pug-plain-loader pug --dev
+```
+
+
