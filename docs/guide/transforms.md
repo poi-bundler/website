@@ -182,4 +182,10 @@ To use `pug` in `<template>` block in `.vue` file, you need to install `pug-plai
 yarn add pug-plain-loader pug --dev
 ```
 
+```vue
+<template lang="pug">
+  .message Hello {{ message }}
+</template>
+```
+
 
