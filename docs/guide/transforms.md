@@ -160,7 +160,7 @@ console.log(sum(1, 2))
 let sum = (x, y) => x + y;
 ```
 
-### Pug
+## Pug
 
 To import `.pug` files, you should have `pug-loader` and `pug` installed in your project:
 
