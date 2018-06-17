@@ -23,7 +23,7 @@ module.exports = {
 module.exports = {
   configureWebpack(config, context) {
     // Do something like adding a plugin
-    config.push.plugins(new BundleAnalyzerPlugin());
+    config.push.plugins(new BundleAnalyzerPlugin())
     // optionally return config
   }
 }
