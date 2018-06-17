@@ -22,7 +22,8 @@ module.exports = {
 // poi.config.js
 module.exports = {
   configureWebpack(config, context) {
-    // Do something..
+    // Do something like adding a plugin
+    config.push.plugins(new BundleAnalyzerPlugin())
     // optionally return config
   }
 }
