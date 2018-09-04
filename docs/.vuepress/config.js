@@ -7,7 +7,9 @@ module.exports = {
         title: 'Guide',
         collapsable: false,
         children: [
-          '/guide/transforms'
+          '/guide/getting-started',
+          '/guide/transforms',
+          '/guide/serve-public-files'
         ]
       }
     ],
