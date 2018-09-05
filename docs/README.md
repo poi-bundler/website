@@ -18,36 +18,16 @@ This is the website for Poi v10.
 For the docs of Poi v9, please go to [https://poi9.netlify.com](https://poi9.netlify.com).
 :::
 
-## Hello World
+## Quick Start
 
-Start writing application with a `index.js`, without any configurations:
+Start a new project with our scaffolding tool:
 
-📝 index.js
+```bash
+# Install it globally using Yarn
+npm i -g create-poi-app
+# Or yarn
+yarn global create-poi-app
 
-```js
-// import another module
-import main from './main'
-
-main()
-```
-
-📝 main.js
-
-```js
-// Files ending with `.module.css` with be imported as CSS modules
-import styles from './styles.module.css'
-
-export default () => {
-  console.log(styles.main)
-}
-```
-
-📝 styles.module.css
-
-```css
-.main {
-  color: red;
-  /* Reference images */
-  background-image: url('./images/main.png')
-}
+# Create a new project
+create-poi-app my-app
 ```
