@@ -13,6 +13,8 @@ Set the base directory to load files via CLI flag `--baseDir`:
 poi build --baseDir web
 ```
 
+In general you use use a directory which contains `package.json` as the base directory.
+
 The default value is `.` which means current working directory.
 
 ## Entry files
