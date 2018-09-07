@@ -77,14 +77,21 @@ Properties:
 
 Create global constants which can be configured at compile time.
 
-## productionSourceMap
+## sourceMap
 
 - Type: `boolean`
 - Default: `true`
 
-Whether to generate sourcemaps for `.js` and `.css` files in **production build**.
+Whether to generate sourcemaps for `.js` and `.css` files
 
 Generating sourcemaps in production build is useful for error reporting, analysing bundle size etc. However if you don't want sourcemaps, you can feel free to disable it.
+
+## minimize
+
+- Type: `boolean`
+- Default: `true` in production build, `false` otherwise
+
+Minimize bundled JS and CSS files.
 
 ## css.extract
 
