@@ -33,6 +33,6 @@ Files on the left have more priority than files on the right:
 
 Poi uses [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) to generate `index.html`.
 
-Here is the [template file](https://github.com/egoist/poi/blob/master/packages/poi/lib/index.ejs) we use, basically it automatically injects webpack assets to the HTML and using `lodash.template` syntax.
+Here is the [template file](https://github.com/upash/poi/blob/v10/packages/poi/lib/index.ejs) we use, basically it automatically injects webpack assets to the HTML and using `lodash.template` syntax.
 
 To use a custom one, you can populate an `index.ejs` file in the root of your project, it will be automatically picked up.
