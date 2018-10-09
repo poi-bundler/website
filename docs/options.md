@@ -164,7 +164,7 @@ Output filename for `.css` files.
 
 Output filename for lazy-loaded chunk files.
 
-#### font
+#### fonts
 
 - __Type__: `string`
 - __Default__: `assets/fonts/[name].[hash:8].[ext]` in `poi build`, `assets/fonts/[name].[ext]` otherwise.
@@ -172,7 +172,7 @@ Output filename for lazy-loaded chunk files.
 
 Output filename for font files.
 
-#### image
+#### images
 
 - __Type__: `string`
 - __Default__: `assets/images/[name].[hash:8].[ext]`
