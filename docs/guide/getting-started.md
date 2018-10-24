@@ -1,14 +1,20 @@
 # Getting Started
 
-First install the *WIP* Poi v11:
+First create a project and install the *WIP* Poi v11:
 
 ```bash
+# Initialize a new project
+mkdir my-project
+cd my-project
+yarn init -y
+
+# Install Poi
 yarn add poi@next --dev
 # Or npm
 npm i poi@next -D
 ```
 
-And add `scripts` to your `package.json` like this:
+Now you can add `scripts` to your `package.json` like this:
 
 ```json
 {
