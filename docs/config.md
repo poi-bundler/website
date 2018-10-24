@@ -80,7 +80,7 @@ Properties:
 
 ## constants
 
-- Type: `Object`
+- Type: `{[k: string]: string | number | boolean}`
 
 Create global constants which can be configured at compile time.
 
@@ -95,8 +95,8 @@ Generating sourcemaps in production build is useful for error reporting, analysi
 
 ## minimize
 
-- Type: `boolean` `'auto'`
-- Default: `'auto'` which means `true` in production build, `false` otherwise
+- Type: `boolean`
+- Default: `undefined` which means `true` in production build, `false` otherwise
 
 Minimize bundled JS and CSS files.
 
@@ -128,8 +128,8 @@ module.exports = {
 
 ## css.extract
 
-- Type: `boolean` `'auto'`
-- Default: `'auto'` which means `true` in production mode, `false` otherwise
+- Type: `boolean`
+- Default: `undefined` which means `true` in production mode, `false` otherwise
 
 Whether to extract CSS into standalone `.css` files.
 
@@ -151,6 +151,32 @@ module.exports = {
       less: {}
     }
   }
+}
+```
+
+## filenameHash
+
+- Type: `boolean`
+- Default: `undefined` which means `true` in production mode, `false` otherwise.
+
+By default, generated static assets contains hashes in their filenames for better caching control in production mode.
+
+
+## filenames
+
+- Type: `Filenames`
+- Default: See [source code](https://github.com/egoist/poi/blob/8b20726a18407acc89569719343eeaf83ac23ff4/packages/poi/lib/utils/get-filenames.js#L4-L21).
+
+If you want advanced filenames customization, use this option. Basically you can change the filename for all types of generated static assets.
+
+```ts
+interface Filenames {
+  js?: string
+  css?: string
+  /* Async chunks */
+  chunk?: string
+  font?: string
+  image?: string
 }
 ```
 
