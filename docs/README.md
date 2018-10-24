@@ -12,7 +12,7 @@ Run `poi dev` in the project and you can preview the website at `http://localhos
 <div class="footer">
 MIT Licensed | Copyright © 2016-Present.
   <div class="author">
-  ♥ Made by <a href="https://egoist.rocks" target="_blank">EGOIST</a>.
+  ♥ Made by <a href="https://egoist.sh" target="_blank">EGOIST</a>.
   </div>
 </div>
 
