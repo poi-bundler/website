@@ -4,12 +4,18 @@ module.exports = {
   themeConfig: {
     sidebar: [
       {
-        title: 'Guide',
+        title: 'Basics',
         collapsable: false,
         children: [
           '/guide/getting-started',
           '/guide/transforms',
           '/guide/serve-public-files'
+        ]
+      },
+      {
+        title: 'How To',
+        children: [
+          '/guide/use-with-eslint'
         ]
       }
     ],
