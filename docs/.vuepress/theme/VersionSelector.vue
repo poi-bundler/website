@@ -3,6 +3,7 @@
     <select @change="handleSelect">
       <option value="v11" selected>v11</option>
       <option value="v10">v10</option>
+      <option value="v9">v9</option>
     </select>
   </div>
 </template>
@@ -13,6 +14,8 @@ export default {
     handleSelect(e) {
       if (e.target.value === 'v10') {
         window.location.href = 'https://v10--poi.netlify.com/'
+      } else if (e.target.value === 'v9') {
+        window.location.href = 'https://poi9.netlify.com'
       }
     }
   }
