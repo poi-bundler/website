@@ -5,7 +5,7 @@ __Poi by default strips types in `.ts` `.tsx` and `lang="ts"` block in Vue files
 If you want to perform type checking when running `poi dev` or `poi build`, you can use the `@poi/plugin-ts-check` plugin:
 
 ```bash
-yarn add @poi/plugin-ts-check typescript --dev
+yarn add @poi/plugin-ts-check@next typescript --dev
 ```
 
 Then load the plugin in your `poi.config.js`:
