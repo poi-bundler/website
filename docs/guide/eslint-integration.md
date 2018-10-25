@@ -1,4 +1,4 @@
-# Use with ESLint
+# ESLint Integration
 
 Install the official [ESLint](https://github.com/egoist/poi/tree/master/packages/plugin-eslint) plugin:
 

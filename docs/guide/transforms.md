@@ -25,17 +25,15 @@ Here's a list of all built-in transforms:
 
 JavaScript is transpiled by [Babel](https://babeljs.io/docs/en) which is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in old browsers or environments.
 
-When Babel config file was not found in the base directory, Poi will use a default [Babel preset](https://babeljs.io/docs/en/plugins#presets) which includes many useful plugins for building a modern web app:
+When Babel config file was not found in your project root, Poi will use a default [Babel preset](https://github.com/egoist/poi/blob/master/packages/poi/lib/babel/preset.js) which includes everything needed for building a modern web app:
 
-- Env preset
+- preset-env
 - JSX support (React, Vue or custom JSX pragma)
-- Dynamic import
-- Class properties
-- Transform runime
-
-:::tip
-Poi uses babel.config.js which is a new config format in Babel 7. Unlike `.babelrc` or the `babel` field in package.json, this config file does not use a file-location based resolution, and is applied consistently to any file under project root, including dependencies inside node_modules. It is recommended to always use `babel.config.js` instead of other formats in Poi projects.
-:::
+- flow and typescript support (Strip types but does not type-check its input)
+- plugin-proposal-object-rest-spread
+- plugin-proposal-class-properties
+- plugin-transform-runime
+- [babel-plugin-macros](https://github.com/kentcdodds/babel-plugin-macros)
 
 ### Preset Options
 
@@ -52,5 +50,68 @@ module.exports = {
 
 #### options.jsx
 
-- Type: `string`
+- Type: `'react' | 'vue' | string`
 - Default: `'react'`
+
+#### options.flow
+
+- Type: `boolean`
+- Default: `true`
+
+Enable Flow support.
+
+#### options.typescript
+
+- Type: `boolean`
+- Default: `true`
+
+Enable TypeScript support, only apply to `.tsx?` files and `lang="ts"` block in `.vue` files. 
+
+## CSS
+
+CSS files will be processed by [PostCSS](https://postcss.org/) when a PostCSS config file is found in your project.
+
+### Pre-Processors
+
+Common CSS pre-processors are also supported but you need to install relevant loaders manually in your project:
+
+```bash
+# Sass
+yarn add sass-loader node-sass --dev
+
+# Less
+yarn add less-loader less --dev
+
+# Stylus
+yarn add stylus-loader stylus --dev
+```
+
+### CSS Modules
+
+To import CSS or other pre-processor files as CSS Modules in JavaScript, the filename should end with `.module.(css|less|sass|scss|styl)`:
+
+```js
+import styles from './foo.module.css'
+// works for all supported pre-processors as well
+import sassStyles from './foo.module.scss'
+```
+
+### Passing Options to Pre-Processor Loaders
+
+Sometimes you may want to pass options to the pre-processor's webpack loader. You can do that using the css.loaderOptions option in `poi.config.js`. For example, to pass some shared global variables to all your Sass styles:
+
+```js
+// poi.config.js
+module.exports = {
+  css: {
+    loaderOptions: {
+      // pass options to sass-loader
+      sass: {
+        // @/ is an alias to src/
+        // so this assumes you have a file named `src/variables.scss`
+        data: `@import "@/variables.scss";`
+      }
+    }
+  }
+}
+```

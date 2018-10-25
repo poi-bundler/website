@@ -36,3 +36,8 @@ document.body.appendChild(el)
 
 Finally just run `yarn dev` and go to `http://localhost:4000`.
 
+So far we get:
+
+- Automatic transpilation and bundling (with [webpack](https://webpack.js.org/) and [babel](https://babeljs.io/))
+- Hot code reloading
+- Static file serving. `./public/` is mapped to `/`

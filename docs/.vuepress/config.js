@@ -2,21 +2,23 @@ module.exports = {
   title: 'Poi',
   description: 'Delightful web development.',
   themeConfig: {
+    lastUpdated: 'Last Updated',
     sidebar: [
       {
         title: 'Basics',
         collapsable: false,
         children: [
           '/guide/getting-started',
-          '/guide/transforms',
-          '/guide/serve-public-files'
+          '/guide/transforms'
         ]
       },
       {
-        title: 'How To',
+        title: 'Linting and Testing',
         collapsable: false,
         children: [
-          '/guide/use-with-eslint'
+          '/guide/eslint-integration',
+          '/guide/jest-integration',
+          '/guide/cypress-integration'
         ]
       }
     ],
