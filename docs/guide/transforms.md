@@ -61,8 +61,8 @@ module.exports = {
 JSX syntax is automatically inferred from your project's dependencies by this order:
 
 - When `vue` is installed, set to `'vue'`
-- When `mithril` is installed, set to `'m'`
 - When `preact` is installed, set to `'h'`
+- When `mithril` is installed, set to `'m'`
 - Otherwise `'react'`
 
 #### options.flow
