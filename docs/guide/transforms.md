@@ -121,7 +121,7 @@ module.exports = {
 ReasonML compiles OCaml to JavaScript with the help of BuckleScript. You can use ReasonML by installing dependencies and creating `bsconfig.json`:
 
 ```bash
-yarn add @poi/plugin-reason bs-platform --dev
+yarn add @poi/plugin-reason@next bs-platform --dev
 ```
 
 📝 __poi.config.js:__
