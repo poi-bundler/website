@@ -27,13 +27,18 @@ JavaScript is transpiled by [Babel](https://babeljs.io/docs/en) which is a toolc
 
 When Babel config file was not found in your project root, Poi will use a default [Babel preset](https://github.com/egoist/poi/blob/master/packages/poi/lib/babel/preset.js) which includes everything needed for building a modern web app:
 
-- preset-env
-- JSX support (React, Vue or custom JSX pragma)
-- flow and typescript support (Strip types but does not type-check its input)
-- plugin-proposal-object-rest-spread
-- plugin-proposal-class-properties
-- plugin-transform-runime
+- ES205 features
+- [Async/await](https://github.com/tc39/ecmascript-asyncawait) (ES2017)
+- [JSX](https://facebook.github.io/react/docs/introducing-jsx.html) syntax (React, Vue or custom JSX pragma)
+- Strip [Flow](https://flow.org/) and [TypeScript](http://www.typescriptlang.org/) types (Ddoes not type-check its input)
+- [Object Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread) (ES2018)
+- [Class Fields and Static Properties](https://github.com/tc39/proposal-class-public-fields) (part of stage 3 proposal)
+- [Dynamic import](https://github.com/tc39/proposal-dynamic-import) (part of stage 3 proposal)
 - [babel-plugin-macros](https://github.com/kentcdodds/babel-plugin-macros)
+
+::: warning
+Poi does not add polyfills to your app, if you use some language features that require runtime polyfills (such as `Array.from` or `Object.assign`), make sure you are including the appropriate polyfills manually, or that the browsers you are targeting already support them.
+:::
 
 ### Preset Options
 
