@@ -56,7 +56,14 @@ module.exports = {
 #### options.jsx
 
 - Type: `'react' | 'vue' | string`
-- Default: `'react'`
+- Default: Automatically inferred.
+
+JSX syntax is automatically inferred from your project's dependencies by this order:
+
+- When `vue` is installed, set to `'vue'`
+- When `mithril` is installed, set to `'m'`
+- When `preact` is installed, set to `'h'`
+- Otherwise `'react'`
 
 #### options.flow
 
