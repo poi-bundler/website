@@ -9,7 +9,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/guide/getting-started',
-          '/guide/transforms'
+          '/guide/transforms',
+          '/guide/environment-variables'
         ]
       },
       {
