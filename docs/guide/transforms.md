@@ -4,21 +4,21 @@ In Poi, you can reference a file in another one, they are so-called assets. For 
 
 Here's a list of all built-in transforms:
 
-|Type|Associated Extension(s)|
-|---|---|
-|JavaScript|`.js` `.jsx`|
-|Vue|`.vue`|
-|GraphQL|`.gql` `.graphql`|
-|YAML|`.yml` `.yaml`|
-|TOML|`.toml`|
-|JSON|`.json`|
-|ReasonML|`.re`|
+|Type|Associated Extension(s)|Required Dependencie(s)|
+|---|---|---|
+|JavaScript|`.js` `.jsx`||
+|Vue|`.vue`|`vue` `vue-template-compiler`|
+|GraphQL|`.gql` `.graphql`|`graphql-tag`|
+|YAML|`.yml` `.yaml`|`yaml-loader`|
+|TOML|`.toml`|`toml-loader`|
+|JSON|`.json`||
+|ReasonML|`.re`|`@poi/plugin-reason` `bs-platform`|
 |CSS|`.css`|
-|SCSS|`.scss`|
-|SASS|`.sass`|
-|LESS|`.less`|
-|Stylus|`.styl` `.stylus`|
-|CSS modules|`.module.{css,less,styl,stylus,sass,scss}`|
+|SCSS|`.scss`|`sass-loader` `node-sass`|
+|SASS|`.sass`|`sass-loader` `node-sass`|
+|LESS|`.less`|`less-loader` `less`|
+|Stylus|`.styl` `.stylus`|`stylus-loader` `stylus`|
+|CSS modules|`.module.{css,less,styl,stylus,sass,scss}`||
 
 
 ## JavaScript
@@ -114,4 +114,55 @@ module.exports = {
     }
   }
 }
+```
+
+## Reason/BuckleScript
+
+ReasonML compiles OCaml to JavaScript with the help of BuckleScript. You can use ReasonML by installing dependencies and creating `bsconfig.json`:
+
+```bash
+yarn add @poi/plugin-reason bs-platform --dev
+```
+
+📝 __poi.config.js:__
+
+```js
+module.exports = {
+  entry: './src/index.re'
+  plugins: [
+    {
+      resolve: '@poi/plugin-reason'
+    }
+  ]
+}
+```
+
+📝 __bsconfig.json:__
+
+```json
+{
+  "name": "whatever",
+  "sources": {
+    "dir": "src",
+    "subdirs": true
+  },
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+  ],
+  "warnings": {
+    "error": "+101"
+  },
+  "namespace": true,
+  "refmt": 3
+}
+```
+
+📝 __src/index.re:__
+
+```reason
+print_endline("Hello World");
 ```
