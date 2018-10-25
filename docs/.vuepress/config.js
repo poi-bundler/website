@@ -1,6 +1,7 @@
 module.exports = {
   title: 'Poi',
   description: 'Delightful web development.',
+  ga: 'UA-54857209-14',
   themeConfig: {
     lastUpdated: 'Last Updated',
     sidebar: [
