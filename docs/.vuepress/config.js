@@ -22,6 +22,13 @@ module.exports = {
           '/guide/jest-integration',
           '/guide/cypress-integration'
         ]
+      },
+      {
+        title: 'Building your App',
+        collapsable: false,
+        children: [
+          '/guide/adding-typescript'
+        ]
       }
     ],
     nav: [
