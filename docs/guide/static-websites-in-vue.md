@@ -24,7 +24,7 @@ module.exports = {
   entry: './src/index.js',
   plugins: [
     {
-      resolve: '@poi/plugin-vue0-static'
+      resolve: '@poi/plugin-vue-static'
     }
   ]
 }
