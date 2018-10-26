@@ -225,6 +225,22 @@ if (process.client) {
 }
 ```
 
+### How do I manipulate head tags?
+
+Via `head` option in your Vue component:
+
+```vue
+<script>
+export default {
+  head: {
+    title: 'Page Title'
+  }
+}
+</script>
+```
+
+This feature is powered by [vue-meta](https://github.com/declandewet/vue-meta) under the hood, but here we are using `head` instead of the default `metaInfo` option.
+
 ## Showcase
 
 A list of websites built with `vue-static`:
