@@ -30,7 +30,7 @@ When Babel config file was not found in your project root, Poi will use a defaul
 - ES2015 features
 - [Async/await](https://github.com/tc39/ecmascript-asyncawait) (ES2017)
 - [JSX](https://facebook.github.io/react/docs/introducing-jsx.html) syntax (React, Vue or custom JSX pragma)
-- Strip [Flow](https://flow.org/) and [TypeScript](http://www.typescriptlang.org/) types (Ddoes not type-check its input)
+- Strip [Flow](https://flow.org/) and [TypeScript](http://www.typescriptlang.org/) types (Does not type-check its input)
 - [Object Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread) (ES2018)
 - [Class Fields and Static Properties](https://github.com/tc39/proposal-class-public-fields) (part of stage 3 proposal)
 - [Dynamic import](https://github.com/tc39/proposal-dynamic-import) (part of stage 3 proposal)
