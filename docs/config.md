@@ -180,6 +180,21 @@ interface Filenames {
 }
 ```
 
+## chainWebpack
+
+- Type: `(config: WebpackChain, opts: Opts) => void`
+
+A function that is used to manipulate the internal [webpack-chain](https://github.com/mozilla-neutrino/webpack-chain) instance.
+
+```ts
+interface Opts {
+  // 'client' by default
+  type: string
+  [k: string]: any
+}
+```
+
+
 ## plugins
 
 - Type: `Array<Plugin>`
