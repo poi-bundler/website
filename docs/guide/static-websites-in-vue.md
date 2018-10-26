@@ -4,7 +4,7 @@ You might be familar with building a SPA using Vue, Vue Router and Poi (webpack)
 
 ## Install
 
-In a Vue project:
+Install this plugin in a Vue project:
 
 ```bash
 yarn add @poi/plugin-vue-static@next --dev
