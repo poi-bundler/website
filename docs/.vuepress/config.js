@@ -11,7 +11,8 @@ module.exports = {
         children: [
           '/guide/getting-started',
           '/guide/transforms',
-          '/guide/environment-variables'
+          '/guide/environment-variables',
+          '/guide/custom-html-template'
         ]
       },
       {
