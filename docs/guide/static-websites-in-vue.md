@@ -1,6 +1,6 @@
 # Static Websites in Vue.js
 
-You might be familar with building a SPA using Vue, Vue Router and Webpack already, here we're introducing a Poi plugin that pre-render each page of your SPA using vue-server-renderer at build time.
+You might be familar with building a SPA using Vue, Vue Router and Poi (webpack) already, here we're introducing a Poi plugin that pre-renders each page of your SPA using vue-server-renderer at build time.
 
 ## Install
 
