@@ -30,6 +30,13 @@ module.exports = {
           '/guide/adding-typescript',
           '/guide/static-websites-in-vue'
         ]
+      },
+      {
+        title: 'Back-End Integration',
+        collapsable: false,
+        children: [
+          '/guide/proxying-api-requests-in-development'
+        ]
       }
     ],
     nav: [
