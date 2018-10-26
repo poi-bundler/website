@@ -4,6 +4,14 @@ Your project can consume variables declared in your environment as if they were 
 
 The environment variables are embedded during the build time.
 
+You can access them like this in your app code:
+
+```js
+if (process.env.NODE_ENV === 'production') {
+  // Apply some code only for production build
+}
+```
+
 ## Adding Environment Variables In `.env`
 
 To define permanent environment variables, create a file called `.env` in the root of your project:
