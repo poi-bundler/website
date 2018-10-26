@@ -27,7 +27,7 @@ JavaScript is transpiled by [Babel](https://babeljs.io/docs/en) which is a toolc
 
 When Babel config file was not found in your project root, Poi will use a default [Babel preset](https://github.com/egoist/poi/blob/master/packages/poi/lib/babel/preset.js) which includes everything needed for building a modern web app:
 
-- ES205 features
+- ES2015 features
 - [Async/await](https://github.com/tc39/ecmascript-asyncawait) (ES2017)
 - [JSX](https://facebook.github.io/react/docs/introducing-jsx.html) syntax (React, Vue or custom JSX pragma)
 - Strip [Flow](https://flow.org/) and [TypeScript](http://www.typescriptlang.org/) types (Ddoes not type-check its input)
