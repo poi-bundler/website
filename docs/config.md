@@ -180,6 +180,14 @@ interface Filenames {
 }
 ```
 
+## devServer
+
+Options for [webpack-dev-server](https://webpack.js.org/configuration/dev-server/#devserver).
+
+Addtional options:
+
+- `devServer.hotEntries`: `default: ['index']` Make specific entry hot reloadable.
+
 ## chainWebpack
 
 - Type: `(config: WebpackChain, opts: Opts) => void`
