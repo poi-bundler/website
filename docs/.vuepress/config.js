@@ -27,7 +27,8 @@ module.exports = {
         title: 'Building your App',
         collapsable: false,
         children: [
-          '/guide/adding-typescript'
+          '/guide/adding-typescript',
+          '/guide/static-websites-in-vue'
         ]
       }
     ],
