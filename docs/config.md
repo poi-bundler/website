@@ -187,6 +187,17 @@ interface Filenames {
 
 Build target. By default it builds your code as a browser app.
 
+## electron
+
+- Type: `ElectronConfig`
+
+```ts
+interface ElectronConfig {
+  /* By default "dependencies" in `package.json` will be excluded from bundle */
+  bundleDependencies?: boolean
+}
+```
+
 ## devServer
 
 Options for [webpack-dev-server](https://webpack.js.org/configuration/dev-server/#devserver).
