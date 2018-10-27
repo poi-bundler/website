@@ -23,7 +23,7 @@ exports.apply = (api, options) => {
 - __Type__: `string`
 - __Required__: `true`
 
-The plugin name, it's mainly used to retrieve plugin options from config file. For example if the name is `foo`, then we will use `pluginOptions.foo` from config file as the second argument of the [`apply`](#apply) method.
+The plugin name which has no meaningful reason of existence for now.
 
 ### apply
 
