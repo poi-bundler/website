@@ -180,6 +180,13 @@ interface Filenames {
 }
 ```
 
+## target
+
+- Type: `'app' | 'electron'`
+- Default: `'app'`
+
+Build target. By default it builds your code as a browser app.
+
 ## devServer
 
 Options for [webpack-dev-server](https://webpack.js.org/configuration/dev-server/#devserver).

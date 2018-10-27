@@ -8,6 +8,7 @@ Here's a list of all built-in transforms:
 |---|---|---|
 |JavaScript|`.js` `.jsx`||
 |Vue|`.vue`|`vue` `vue-template-compiler`|
+|CoffeeScript|`.coffee`|`coffee-loader` `coffeescript`|
 |GraphQL|`.gql` `.graphql`|`graphql-tag`|
 |YAML|`.yml` `.yaml`|`yaml-loader`|
 |TOML|`.toml`|`toml-loader`|
