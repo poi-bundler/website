@@ -30,7 +30,7 @@ Poi loads `.env` files by this order:
 Notably:
 
 - Files on the top have more priority than files on the bottom.
-- `NODE_ENV` defaults to `development` and we __NEVER__ change it. You're supposed to run Poi command with specific NODE_ENV such as `NODE_ENV=production poi build` if you want to load `.env.production` file.
+- `NODE_ENV` defaults to `undefined` and we __NEVER__ change it. You're supposed to run Poi command with specific NODE_ENV such as `NODE_ENV=production poi build` if you want to use `.env.production` or `.env.production.local` files.
 
 ::: warning
 You're recommended to create custom environment variables beginning with `POI_`, otherwise you may [accidentally exposing a private key](https://github.com/facebook/create-react-app/issues/865#issuecomment-252199527) on the machine that could have the same name. Changing any environment variables will require you to restart the development server if it is running.
