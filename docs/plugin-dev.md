@@ -30,19 +30,36 @@ The plugin name, it's mainly used to retrieve plugin options from config file. F
 - __Type__: `(api: PluginAPI, options: any) => void`
 - __Required__: `false`
 
-### commandModes
+### commandInternals
 
-- __Type__: `{ [command: string]: string }`
+- __Type__: `CommandInternals`
 
-Set the mode for the commands added via the plugin. For example we set the mode to `production` in the plugin that adds the `build` command:
+Set the internal config for commands. For example we set the mode to `production` in the plugin that adds the `build` command:
 
 ```js
-exports.commandModes = {
-  build: 'production'
+exports.commandInternals = {
+  build: {
+    mode: 'production'
+  }
+}
+```
+
+The type is:
+
+```ts
+interface CommandInternals {
+  mode?: 'production' | 'development'
+  watchPkg?: boolean
 }
 ```
 
 ## Plugin API
+
+### api.command
+
+- Type: `string`
+
+Get the current command.
 
 ### api.mode
 
