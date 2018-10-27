@@ -20,6 +20,18 @@ To define permanent environment variables, create a file called `.env` in the ro
 POI_APP_SECRET_CODE=abcdef
 ```
 
+Poi loads `.env` files by this order:
+
+- `.env.{NODE_ENV}.local`: Local overrides of environment-specific settings.
+- `.env.{NODE_ENV}` Environment-specific settings.
+- `.env.local`: Local overrides. __This file is loaded for all environments except test.__
+- `.env`: Default.
+
+Notably:
+
+- Files on the top have more priority than files on the bottom.
+- `NODE_ENV` defaults to `development` and we __NEVER__ change it. You're supposed to run Poi command with specific NODE_ENV such as `NODE_ENV=production poi build` if you want to load `.env.production` file.
+
 ::: warning
 You're recommended to create custom environment variables beginning with `POI_`, otherwise you may [accidentally exposing a private key](https://github.com/facebook/create-react-app/issues/865#issuecomment-252199527) on the machine that could have the same name. Changing any environment variables will require you to restart the development server if it is running.
 :::
