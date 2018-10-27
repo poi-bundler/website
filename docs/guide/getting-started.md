@@ -1,5 +1,17 @@
 # Getting Started
 
+## Overview
+
+Poi is a toolkit for rapid web development:
+
+- Zero config rapid prototyping, like `create-react-app` and `vue-cli` but framework-agnostic
+- Easy to update, you can simply update `poi` and relevant plugins
+- Versatile, you can build SPA, static websites, Electron apps or whatever
+- Allow configurations for advanced usages
+- Extensible plugin API, everything is configurable
+
+## Quick Start
+
 First create a project and install the *WIP* Poi v11:
 
 ```bash
