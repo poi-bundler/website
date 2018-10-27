@@ -94,3 +94,39 @@ Resolve path from base directory.
 ```js
 api.resolve('foo.js')
 ```
+
+### api.resolveWebpackConfig
+
+Resolve webpack config object. By calling this method, Poi will create a fresh instance of webpack-chain and run all `chainWebpack` functions against it.
+
+```js
+api.resolveWebpackConfig(opts)
+```
+
+`opts` is optional here, it will be merged with `{ type: 'client'}` and used as the second argument of each `chainWebpack` function:
+
+```js
+// You can call this multiple times to get multiple webpack configs
+const serverConfig = api.resolveWebpackConfig({ type: 'server' })
+const clientConfig = api.resolveWebpackConfig()
+
+api.chainWebpack((config, { type } => {
+  // now `type` will be `server` or `client`
+  if (type === 'server') {
+    // Do something to server config
+  }
+}))
+```
+
+### api.runWebpack
+
+Run webpack compiler:
+
+```js
+const webpackConfig = api.resolveWebpackConfig()
+
+api.runWebpack(webpackConfig)
+  .then(stats => {
+    console.log(stats.toString())
+  })
+```
