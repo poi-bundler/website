@@ -1,29 +1,41 @@
 # Getting Started
 
-## Overview
+## Introduction
 
-Poi is a toolkit for rapid web development:
+Poi is a bundler for your web apps, Electron apps, libraries and so on.
 
-- Zero config rapid prototyping, like `create-react-app` and `vue-cli` but framework-agnostic
-- Easy to update, you can simply update `poi` and relevant plugins
-- Versatile, you can build SPA, static websites, Electron apps or whatever
-- Allow configurations for advanced usages
-- Extensible plugin API, everything is configurable
+Poi is built on the top of [webpack](https://webpack.js.org/), combining the flexibility of webpack with the philosophy of simplicity.
+
+Poi takes an entry file which is generally a JavaScript file or something that can be transformed to run in your targeted environment like the browser. Poi parses the entry file, transforms the dependencies and merges them together into a small set of output files alongside a `index.html` which could properly load those files.
+
+poi tries to support as many kinds of file types as possible, from some well-known web technologies like `.css` `.js` `.vue`  to compile-to-js and compile-to-wasm languages like `Flow` `TypeScript` `ReasonML` `Elm` `Rust` and so on, you name it!
 
 ## Quick Start
 
-First create a project and install the *WIP* Poi v11:
+Before we get started, you need to ensure that [Node.js](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) (or npm) are installed properly on your machine:
+
+```bash
+# Check node version
+# Should be >= 8
+node -v
+
+# Check out npm or yarn version
+# You will use either one of them to install Poi later
+npm -v
+yarn -v
+```
+
+Now create a `package.json` in a new folder with your package manager of choice, here we're using Yarn since it's faster and more reliable than npm as of now:
 
 ```bash
 # Initialize a new project
 mkdir my-project
 cd my-project
-yarn init -y
+yarn init
 
-# Install Poi
+# Install Poi as a local devDependency
+# From @next channel since it's not officially released yet
 yarn add poi@next --dev
-# Or npm
-npm i poi@next -D
 ```
 
 Now you can add `scripts` to your `package.json` like this:
