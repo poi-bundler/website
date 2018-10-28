@@ -15,8 +15,8 @@ Here's a list of all built-in transforms:
 |JSON|`.json`||
 |ReasonML|`.re`|`@poi/plugin-reason` `bs-platform`|
 |CSS|`.css`|
-|SCSS|`.scss`|`sass-loader` `node-sass`|
-|SASS|`.sass`|`sass-loader` `node-sass`|
+|SCSS|`.scss`|`sass-loader` `sass`|
+|SASS|`.sass`|`sass-loader` `sass`|
 |LESS|`.less`|`less-loader` `less`|
 |Stylus|`.styl` `.stylus`|`stylus-loader` `stylus`|
 |CSS modules|`.module.{css,less,styl,stylus,sass,scss}`||
