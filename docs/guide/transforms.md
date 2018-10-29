@@ -10,6 +10,7 @@ Here's a list of all built-in transforms:
 |Vue|`.vue`|`vue` `vue-template-compiler`|
 |CoffeeScript|`.coffee`|`coffee-loader` `coffeescript`|
 |GraphQL|`.gql` `.graphql`|`graphql-tag`|
+|MDX|`.mdx`|`@poi/plugin-mdx`|
 |YAML|`.yml` `.yaml`|`yaml-loader`|
 |TOML|`.toml`|`toml-loader`|
 |JSON|`.json`||
