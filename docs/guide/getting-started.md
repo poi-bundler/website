@@ -10,7 +10,7 @@ Poi takes an entry file which is generally a JavaScript file or something that c
 
 Poi tries to support as many kinds of file types as possible, from some well-known web technologies like `.css` `.js` `.vue`  to compile-to-js and compile-to-wasm languages like `Flow` `TypeScript` `ReasonML` `Elm` `Rust` and so on, you name it!
 
-Poi is also extermely extensible thanks to its plugin API.
+Poi is also extremely extensible thanks to its plugin API.
 
 ## Quick Start
 
