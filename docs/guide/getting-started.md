@@ -2,13 +2,15 @@
 
 ## Introduction
 
-Poi is a bundler for your web apps, Electron apps, libraries and so on.
+Poi is a toolkit for your web apps, Electron apps, libraries and so on.
 
 Poi is built on the top of [webpack](https://webpack.js.org/), combining the flexibility of webpack with the philosophy of simplicity.
 
 Poi takes an entry file which is generally a JavaScript file or something that can be transformed to run in your targeted environment like the browser. Poi parses the entry file, transforms the dependencies and merges them together into a small set of output files alongside a `index.html` which could properly load those files.
 
-poi tries to support as many kinds of file types as possible, from some well-known web technologies like `.css` `.js` `.vue`  to compile-to-js and compile-to-wasm languages like `Flow` `TypeScript` `ReasonML` `Elm` `Rust` and so on, you name it!
+Poi tries to support as many kinds of file types as possible, from some well-known web technologies like `.css` `.js` `.vue`  to compile-to-js and compile-to-wasm languages like `Flow` `TypeScript` `ReasonML` `Elm` `Rust` and so on, you name it!
+
+Poi is also extermely extensible thanks to its plugin API.
 
 ## Quick Start
 
