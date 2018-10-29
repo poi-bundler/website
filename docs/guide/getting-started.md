@@ -67,3 +67,6 @@ So far we get:
 - Automatic transpilation and bundling (with [webpack](https://webpack.js.org/) and [babel](https://babeljs.io/))
 - Hot code reloading
 - Static file serving. `./public/` is mapped to `/`
+
+::: tip
+Alternatively, here's a simple [starter](https://github.com/poi-starters/simple) that you can clone it locally to try Poi.
