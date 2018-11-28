@@ -20,7 +20,7 @@ Next inside your project, run `yarn init` or `npm init` to create a `package.jso
 
 ```bash
 yarn init
-yarn add poi@future --dev
+yarn add poi@next --dev
 ```
 
 Now all you need is to create an entry file, like if you're building a website, just create an `index.js`:
