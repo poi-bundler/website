@@ -10,6 +10,7 @@ module.exports = {
         collapsable: false,
         children: [
           '/guide/getting-started',
+          '/guide/cli-usages',
           '/guide/transforms',
           '/guide/environment-variables',
           '/guide/custom-html-template'

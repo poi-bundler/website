@@ -12,7 +12,7 @@ Poi is a bundler built on the top of webpack, trying to make developing and bund
 - 🐙 Fit most web apps, npm libs.
 - 🚨 Great development experience.
 
-## Getting Started
+## Quick Start
 
 Before we get started, ensure that you have installed Node.js (>=8) and Yarn (or npm) on your machine.
 
