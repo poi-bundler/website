@@ -13,7 +13,7 @@ You should also add some npm scripts to your `package.json` to run it easier.
   "name": "my-project",
   "scripts": {
     "build": "poi --prod",
-    "start": "poi --serve"
+    "dev": "poi --serve"
   },
   "devDependencies": {
     "poi": "next"
@@ -21,7 +21,7 @@ You should also add some npm scripts to your `package.json` to run it easier.
 }
 ```
 
-Now you can run `yarn build` to create a production build and `yarn start` to start a dev server for your project.
+Now you can run `yarn build` to create a production build and `yarn dev` to start a dev server for your project.
 
 ## Modes
 
