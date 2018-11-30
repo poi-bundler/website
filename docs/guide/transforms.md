@@ -17,8 +17,8 @@ Here's a list of all built-in transforms:
 |JSON|`.json`|🎉|
 |ReasonML|`.re`|`@poi/plugin-reason` `bs-platform`|
 |CSS|`.css`|🎉|
-|SCSS|`.scss`|`sass-loader` `sass`|
-|SASS|`.sass`|`sass-loader` `sass`|
+|SCSS|`.scss`|`sass-loader` `node-sass`|
+|SASS|`.sass`|`sass-loader` `node-sass`|
 |LESS|`.less`|`less-loader` `less`|
 |Stylus|`.styl` `.stylus`|`stylus-loader` `stylus`|
 |CSS modules|`.module.{css,less,styl,stylus,sass,scss}`|🎉|
@@ -85,7 +85,7 @@ Common CSS pre-processors are also supported but you need to install relevant lo
 
 ```bash
 # Sass
-yarn add sass-loader sass --dev
+yarn add sass-loader node-sass --dev
 
 # Less
 yarn add less-loader less --dev
