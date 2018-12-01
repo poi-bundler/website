@@ -1,6 +1,6 @@
 # Custom HTML Template
 
-`index.html` is generated from a HTML template file, this is the [default one](https://github.com/egoist/poi/blob/master/packages/poi/lib/webpack/default-template.html) we use:
+`index.html` is generated from a HTML template file, this is the [default one](https://github.com/egoist/poi/blob/master/core/poi/lib/webpack/default-template.html) we use:
 
 <<< @/data/default-template.html
 
