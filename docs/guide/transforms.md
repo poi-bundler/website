@@ -17,8 +17,8 @@ Here's a list of all built-in transforms:
 |JSON|`.json`|🎉|
 |ReasonML|`.re`|`@poi/plugin-reason` `bs-platform`|
 |CSS|`.css`|🎉|
-|SCSS|`.scss`|`sass-loader` `sass`|
-|SASS|`.sass`|`sass-loader` `sass`|
+|SCSS|`.scss`|`sass-loader` `node-sass`|
+|Sass|`.sass`|`sass-loader` `node-sass`|
 |LESS|`.less`|`less-loader` `less`|
 |Stylus|`.styl` `.stylus`|`stylus-loader` `stylus`|
 |CSS modules|`.module.{css,less,styl,stylus,sass,scss}`|🎉|
@@ -85,7 +85,7 @@ Common CSS pre-processors are also supported but you need to install relevant lo
 
 ```bash
 # Sass
-yarn add sass-loader sass --dev
+yarn add sass-loader node-sass --dev
 
 # Less
 yarn add less-loader less --dev
@@ -93,6 +93,10 @@ yarn add less-loader less --dev
 # Stylus
 yarn add stylus-loader stylus --dev
 ```
+
+::: tip
+A note to Sass users, since `node-sass` requires a native library which may be difficult to install, you can also used the [`sass`](https://www.npmjs.com/package/sass) package which is compiled from [`dart-sass`](https://github.com/sass/dart-sass).
+:::
 
 ### CSS Modules
 
