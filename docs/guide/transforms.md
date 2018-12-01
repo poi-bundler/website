@@ -21,7 +21,7 @@ Here's a list of all built-in transforms:
 |Sass|`.sass`|`sass-loader` `node-sass`|
 |LESS|`.less`|`less-loader` `less`|
 |Stylus|`.styl` `.stylus`|`stylus-loader` `stylus`|
-|CSS modules|`.module.{css,less,styl,stylus,sass,scss}`|🎉|
+|CSS modules|`.module.{css,less,styl,stylus,sass,scss}`|🎉 The dependencies mentioned above are required for pre-processing, but `CSS modules` works out of the box|
 
 
 ## JavaScript
