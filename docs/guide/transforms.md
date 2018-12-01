@@ -94,6 +94,10 @@ yarn add less-loader less --dev
 yarn add stylus-loader stylus --dev
 ```
 
+::: tip
+A note to Sass users, since `node-sass` requires a native library which may be difficult to install, you can also used the [`sass`](https://www.npmjs.com/package/sass) package which is compiled from [`dart-sass`](https://github.com/sass/dart-sass).
+:::
+
 ### CSS Modules
 
 To import CSS or other pre-processor files as CSS Modules in JavaScript, the filename should end with `.module.(css|less|sass|scss|styl)`:
