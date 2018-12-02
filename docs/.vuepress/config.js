@@ -9,8 +9,10 @@ module.exports = {
         title: 'Basics',
         collapsable: false,
         children: [
+          '/guide/installation',
           '/guide/getting-started',
           '/guide/cli-usages',
+          '/guide/creating-new-projects',
           '/guide/transforms',
           '/guide/environment-variables',
           '/guide/custom-html-template'

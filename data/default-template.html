@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%= htmlWebpackPlugin.options.title %></title>
+  <title><%= html.title %></title>
+
+  <% if (pkg.description) { %>
+    <meta name="description" content="<%= pkg.description %>">
+  <% } %>
+
 </head>
 <body>
   <noscript>
-    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    We're sorry but <%= html.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.
   </noscript>
   <div id="app"></div>
 </body>
