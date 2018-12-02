@@ -177,3 +177,41 @@ interface LoaderOptions {
   stylus?: any
 }
 ```
+
+## html
+
+Customize generated HTML file.
+
+The options you provide here will also be available under `html` variable in your HTML file, so you can access them using EJS syntax:
+
+```html
+<title><%= html.title %></title>
+```
+
+### html.title
+
+- Type: `string`
+- Default: `pkg.title`
+
+Document title.
+
+### html.filename
+
+- Type: `string`
+- Default: `index.html`
+
+The filename of generated HTML file.
+
+### html.template
+
+- Type: `string`
+- Default: `poi/lib/webpack/default-template.html`
+
+The template file for generated HTML file, supporting EJS syntax.
+
+### html.inject
+
+- Type: `boolean`
+- Default: `true`
+
+Automatically inject webpack assets to `<head>` and `<script>`.
