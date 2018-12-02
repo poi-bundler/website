@@ -1,6 +1,6 @@
 # Post-Processing CSS
 
-You can use Sass, SCSS, Less, and Stylus to pre-process the CSS files, in fact, these files will also be post-processed by [PostCSS] when a `postcss.config.js` is found in your project.
+You can use Sass, SCSS, Less, and Stylus to pre-process the CSS files, in fact, these files will also be post-processed by [PostCSS](https://github.com/postcss/postcss) when a `postcss.config.js` is found in your project.
 
 For example you can add `autoprefixer` in `postcss.config.js` to automatically add vendor prefixes based on the browsers you target:
 
