@@ -222,3 +222,33 @@ The template file for generated HTML file, supporting EJS syntax.
 - CLI: `--[no-]html.inject`
 
 Automatically inject webpack assets to `<head>` and `<body>`.
+
+## envs
+
+Embed environment variables into your app code.
+
+See [details](./guide/environment-variables.md#adding-environment-variables-in-poi-config-file)
+
+## constants
+
+Replace global constants in your app code with the value you defined here:
+
+```js
+module.exports = {
+  constants: {
+    FOO: 'bar'
+  }
+}
+```
+
+Then in your app code:
+
+```js
+let FOO = 123
+```
+
+Transpiled code:
+
+```js
+let bar = 123
+```
