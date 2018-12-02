@@ -214,4 +214,4 @@ The template file for generated HTML file, supporting EJS syntax.
 - Type: `boolean`
 - Default: `true`
 
-Automatically inject webpack assets to `<head>` and `<script>`.
+Automatically inject webpack assets to `<head>` and `<body>`.
