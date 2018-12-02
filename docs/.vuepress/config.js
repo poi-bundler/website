@@ -20,6 +20,16 @@ module.exports = {
         ]
       },
       {
+        title: 'Styles and Assets',
+        collapsable: false,
+        children: [
+          '/guide/adding-stylesheets',
+          '/guide/adding-css-modules',
+          '/guide/pre-processing-css',
+          '/guide/post-processing-css'
+        ]
+      },
+      {
         title: 'Advanced',
         collapsable: false,
         children: [

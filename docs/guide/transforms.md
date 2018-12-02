@@ -75,59 +75,6 @@ Enable Flow support.
 
 Enable TypeScript support, only apply to `.tsx?` files and `lang="ts"` block in `.vue` files. 
 
-## CSS
-
-CSS files will be processed by [PostCSS](https://postcss.org/) when a PostCSS config file is found in your project.
-
-### Pre-Processors
-
-Common CSS pre-processors are also supported but you need to install relevant loaders manually in your project:
-
-```bash
-# Sass
-yarn add sass-loader node-sass --dev
-
-# Less
-yarn add less-loader less --dev
-
-# Stylus
-yarn add stylus-loader stylus --dev
-```
-
-::: tip
-A note to Sass users, since `node-sass` requires a native library which may be difficult to install, you can also used the [`sass`](https://www.npmjs.com/package/sass) package which is compiled from [`dart-sass`](https://github.com/sass/dart-sass).
-:::
-
-### CSS Modules
-
-To import CSS or other pre-processor files as CSS Modules in JavaScript, the filename should end with `.module.(css|less|sass|scss|styl)`:
-
-```js
-import styles from './foo.module.css'
-// works for all supported pre-processors as well
-import sassStyles from './foo.module.scss'
-```
-
-### Passing Options to Pre-Processor Loaders
-
-Sometimes you may want to pass options to the pre-processor's webpack loader. You can do that using the css.loaderOptions option in `poi.config.js`. For example, to pass some shared global variables to all your Sass styles:
-
-```js
-// poi.config.js
-module.exports = {
-  css: {
-    loaderOptions: {
-      // pass options to sass-loader
-      sass: {
-        // @/ is an alias to src/
-        // so this assumes you have a file named `src/variables.scss`
-        data: `@import "@/variables.scss";`
-      }
-    }
-  }
-}
-```
-
 ## Reason/BuckleScript
 
 Use [@poi/plugin-reason](./plugin-reason.md).
