@@ -60,3 +60,11 @@ Serve entry files with a dev server, with hot reloading support.
 Bundle entry files in test mode. In general you need to combine this flag with a plugin like [Karma](./plugin-karma.md) to run tests.
 
 Alias for `--mode test`.
+
+### `--debug`
+
+Show debug logs.
+
+### `--inspect-webpack`
+
+Open the internal webpack config in your default editor.
