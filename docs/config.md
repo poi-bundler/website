@@ -18,6 +18,7 @@ module.exports = {
 
 - Type: `string` `string[]` `object`
 - Default: `index` which means it will use `index.js` or `index.ts` by default.
+- CLI: `poi [...entries]`
 
 Specify the entry file(s).
 
