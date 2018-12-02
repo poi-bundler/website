@@ -14,6 +14,8 @@ module.exports = {
 }
 ```
 
+You can access `process.env.NODE_ENV` in the config file, its default value is the same as CLI [mode](./guide/cli-usages.md#modes).
+
 ## entry
 
 - Type: `string` `string[]` `object`
