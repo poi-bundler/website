@@ -26,4 +26,4 @@ In app code you can use `process.env` to access embeded [Environment Variables](
 
 ### constants
 
-`constants` if the `constants` option you passed [here](../config.md#constants).
+`constants` is the `constants` option you passed [here](../config.md#constants).
