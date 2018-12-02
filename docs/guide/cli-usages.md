@@ -35,7 +35,7 @@ There's also `--prod, --production` flags which set the mode to `production` so 
 
 Here's a list of major CLI flags.
 
-To get the extra CLI flags for each of following flags, append `--help` flag.
+To get the extra CLI flags for each of following flags, append `--help` flag. You can also go to the [config](../config.md) page to check out available CLI flags for config options.
 
 ### `poi [...entries]`
 
