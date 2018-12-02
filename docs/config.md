@@ -218,6 +218,15 @@ The template file for generated HTML file, supporting EJS syntax.
 
 Automatically inject webpack assets to `<head>` and `<body>`.
 
+## assets
+
+### assets.inlineImageMaxSize
+
+- Type: `number`
+- Default: `5000` (bytes)
+
+Images that are smaller than this size won't be inlined in the bundle.
+
 ## envs
 
 Embed environment variables into your app code.
