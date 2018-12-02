@@ -14,6 +14,7 @@ module.exports = {
           '/guide/cli-usages',
           '/guide/creating-new-projects',
           '/guide/transforms',
+          '/guide/frameworks',
           '/guide/environment-variables',
           '/guide/custom-html-template'
         ]
