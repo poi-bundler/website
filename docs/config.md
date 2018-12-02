@@ -37,6 +37,7 @@ The directory to output files.
 
 - TypeL `boolean`
 - Default: `true`
+- CLI: `--[no-]clean`
 
 Clean output directory before bundling.
 
@@ -52,7 +53,7 @@ Specify the output format.
 ### output.moduleName
 
 - Type: `string`
-
+- CLI: `--module-name <name>`
 
 Specify the output module name for bundles in `umd` format.
 
@@ -60,7 +61,7 @@ Specify the output module name for bundles in `umd` format.
 
 - Type: `boolean`
 - Default: `false` in `production` mode, `true` otherwise
-- CLI: `--source-map`
+- CLI: `--[no-]source-map`
 
 Generate source map.
 
@@ -68,7 +69,7 @@ Generate source map.
 
 - Type: `boolean`
 - Default: `true` in `production` mode, `false` otherwise
-- CLI: `--minimize`
+- CLI: `--[no-]minimize`
 
 Minimize output files.
 
@@ -154,6 +155,7 @@ Transpile specific modules in Babel transpilation process. By default Babel only
 
 - Type: `boolean`
 - Default: `true` in production builds, `false` otherwise
+- CLI: `--[no-]extract-css`
 
 Whether to extract CSS into standalone CSS files.
 
@@ -192,6 +194,7 @@ The options you provide here will also be available under `html` variable in you
 
 - Type: `string`
 - Default: `pkg.title`
+- CLI: `--html.title <title>`
 
 Document title.
 
@@ -199,6 +202,7 @@ Document title.
 
 - Type: `string`
 - Default: `index.html`
+- CLI: `--html.filename <filename>`
 
 The filename of generated HTML file.
 
@@ -206,6 +210,7 @@ The filename of generated HTML file.
 
 - Type: `string`
 - Default: `poi/lib/webpack/default-template.html`
+- CLI: `--html.template <template>`
 
 The template file for generated HTML file, supporting EJS syntax.
 
@@ -213,5 +218,6 @@ The template file for generated HTML file, supporting EJS syntax.
 
 - Type: `boolean`
 - Default: `true`
+- CLI: `--[no-]html.inject`
 
 Automatically inject webpack assets to `<head>` and `<body>`.
