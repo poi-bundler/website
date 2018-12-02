@@ -252,3 +252,20 @@ Transpiled code:
 ```js
 let bar = 123
 ```
+
+## chainWebpack
+
+- Type: `(config: WebpackChain, opts: Opts) => void`
+
+Modify internal webpack config with the [webpack-chain](https://github.com/neutrinojs/webpack-chain) API.
+
+```ts
+interface Opts {
+  /** Default: client */
+  type: string
+  [k: string]: any
+}
+
+// Some plugin might supply custom opts for creating customized webpack config
+// e.g. creating one for client bundle and the other one for server bundle
+```
