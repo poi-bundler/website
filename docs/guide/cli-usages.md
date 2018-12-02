@@ -33,4 +33,30 @@ There's also `--prod, --production` flags which set the mode to `production` so 
 
 ## CLI Args & Flags
 
-Run `poi --help` and you'll get detailed help message.
+Here's a list of major CLI flags.
+
+To get the extra CLI flags for each of following flags, append `--help` flag.
+
+### `poi [...entries]`
+
+Bundle the entry files in development mode, so you will an unminified bundle __with__ sourcemaps.
+
+### `--prod, --production`
+
+Bundle the entry files in production mode, so you will a minified bundle __without__ sourcemaps.
+
+Alias for `--mode production`.
+
+### `--watch`
+
+Bundle entry files and watch file changes.
+
+### `--serve`
+
+Serve entry files with a dev server, with hot reloading support.
+
+### `--test`
+
+Bundle entry files in test mode. In general you need to combine this flag with a plugin like [Karma](./plugin-karma.md) to run tests.
+
+Alias for `--mode test`.
