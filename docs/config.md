@@ -91,7 +91,6 @@ The base URL your application bundle will be deployed at. This is the equivalent
 interface FileNames {
   js?: string
   css?: string
-  chunk?: string
   font?: string
   image?: string
 }
@@ -104,9 +103,6 @@ const DefaultFileNames = {
   css: isProduction
     ? 'assets/css/[name].[chunkhash:8].css'
     : 'assets/css/[name].css',
-  chunk: isProduction
-    ? 'assets/js/[name].[chunkhash:8].chunk.js'
-    : 'assets/js/[name].chunk.js',
   font: isProduction
     ? 'assets/fonts/[path][name].[hash:8].[ext]'
     : 'assets/fonts/[path][name].[ext]',
@@ -119,7 +115,6 @@ const DefaultFileNames = {
 const DefaultFileNames = {
   js: '[name].js',
   css: '[name].css',
-  chunk: '[name].chunk.js',
   font: '[path][name].[ext]',
   image: '[path][name].[ext]'
 }
