@@ -1,4 +1,4 @@
-# Proxying API Requests in Development
+# Proxying API Requests
 
 If you want to serve your API at the same host and port as your front-end app, you may want to use the `devServer.proxy` option:
 

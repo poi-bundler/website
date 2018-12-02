@@ -30,10 +30,10 @@ module.exports = {
         ]
       },
       {
-        title: 'Advanced',
+        title: 'Development',
         collapsable: false,
         children: [
-          '/guide/proxying-api-requests-in-development'
+          '/guide/proxying-api-requests'
         ]
       }
     ],
