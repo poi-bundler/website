@@ -225,7 +225,7 @@ Automatically inject webpack assets to `<head>` and `<body>`.
 - Type: `number`
 - Default: `5000` (bytes)
 
-Images that are smaller than this size won't be inlined in the bundle.
+Images that are smaller than this size will be inlined in the bundle.
 
 ## envs
 
