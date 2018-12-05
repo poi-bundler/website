@@ -130,6 +130,48 @@ const DefaultFileNames = {
 
 Bundle target.
 
+### output.html
+
+Customize generated HTML file. This is only available in `iife` and `umd` format.
+
+The options you provide here will also be available under `html` variable in your HTML file, so you can access them using EJS syntax:
+
+```html
+<title><%= html.title %></title>
+```
+
+#### output.html.title
+
+- Type: `string`
+- Default: `pkg.title`
+- CLI: `--html.title <title>`
+
+Document title.
+
+#### output.html.filename
+
+- Type: `string`
+- Default: `index.html`
+- CLI: `--html.filename <filename>`
+
+The filename of generated HTML file.
+
+#### output.html.template
+
+- Type: `string`
+- Default: `poi/lib/webpack/default-template.html`
+- CLI: `--html.template <template>`
+
+The template file for generated HTML file, supporting EJS syntax.
+
+#### output.html.inject
+
+- Type: `boolean`
+- Default: `true`
+- CLI: `--[no-]html.inject`
+
+Automatically inject webpack assets to `<head>` and `<body>`.
+
 ## babel
 
 ### babel.jsx
@@ -177,48 +219,6 @@ interface LoaderOptions {
   stylus?: any
 }
 ```
-
-## html
-
-Customize generated HTML file.
-
-The options you provide here will also be available under `html` variable in your HTML file, so you can access them using EJS syntax:
-
-```html
-<title><%= html.title %></title>
-```
-
-### html.title
-
-- Type: `string`
-- Default: `pkg.title`
-- CLI: `--html.title <title>`
-
-Document title.
-
-### html.filename
-
-- Type: `string`
-- Default: `index.html`
-- CLI: `--html.filename <filename>`
-
-The filename of generated HTML file.
-
-### html.template
-
-- Type: `string`
-- Default: `poi/lib/webpack/default-template.html`
-- CLI: `--html.template <template>`
-
-The template file for generated HTML file, supporting EJS syntax.
-
-### html.inject
-
-- Type: `boolean`
-- Default: `true`
-- CLI: `--[no-]html.inject`
-
-Automatically inject webpack assets to `<head>` and `<body>`.
 
 ## assets
 
