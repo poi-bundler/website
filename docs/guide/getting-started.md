@@ -19,7 +19,7 @@ Before we get started, ensure that you have installed Node.js (>=8) and Yarn (or
 ### Get Started Immediately
 
 ```bash
-yarn global add create-poi-app@next
+yarn global add create-poi-app
 create-poi-app my-app
 
 cd my-app
@@ -35,7 +35,7 @@ Inside an empty project, run `yarn init` or `npm init` to create a `package.json
 
 ```bash
 yarn init
-yarn add poi@next --dev
+yarn add poi --dev
 ```
 
 Now all you need is to create an entry file, like if you're building a website, just create an `index.js`:

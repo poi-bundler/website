@@ -3,7 +3,7 @@
 Install the official [ESLint](https://github.com/egoist/poi/tree/master/packages/plugin-eslint) plugin:
 
 ```bash
-yarn add @poi/plugin-eslint@next --dev
+yarn add @poi/plugin-eslint --dev
 ```
 
 Then you can load it in the Poi config file:

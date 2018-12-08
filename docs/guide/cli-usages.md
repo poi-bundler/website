@@ -3,7 +3,7 @@
 Poi CLI is built into the main package `poi`. While you can install it globally and run it, it is much better to install it locally into your project as a dev dependency.
 
 ```bash
-yarn add poi@next --dev
+yarn add poi --dev
 ```
 
 You should also add some npm scripts to your `package.json` to run it easier.
@@ -16,7 +16,7 @@ You should also add some npm scripts to your `package.json` to run it easier.
     "dev": "poi --serve"
   },
   "devDependencies": {
-    "poi": "next"
+    "poi": "latest"
   }
 }
 ```

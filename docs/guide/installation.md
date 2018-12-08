@@ -3,7 +3,7 @@
 You can install Poi globally for instant prototyping like this:
 
 ```bash
-yarn global add poi@next
+yarn global add poi
 
 # sh
 echo "alert('oops')" > index.js && poi -so
@@ -17,7 +17,7 @@ However, for a real-world project you should install Poi locally in your project
 
 ```bash
 cd my-project
-yarn add poi@next --dev
+yarn add poi --dev
 ```
 
 Then you can use [npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) _(comes with npm 5.2+)_ or Yarn to run the locally installed Poi:
@@ -37,7 +37,7 @@ You should also add some npm scripts to your package.json to run it easier for e
     "dev": "poi --serve"
   },
   "devDependencies": {
-    "poi": "next"
+    "poi": "latest"
   }
 }
 ```
