@@ -276,6 +276,29 @@ interface Opts {
 // e.g. creating one for client bundle and the other one for server bundle
 ```
 
+## configureWebpack
+
+- Type: `WebpackConfig | ((config: WebpackConfig, opts: Opts) => WebpackConfig | void)`
+
+Instead of using [chainWebpack](#chainwebpack) you can provide an object or a function as the value of configureWebpack option:
+
+```js
+module.exports = {
+  configureWebpack(config) {
+    config.resolve.alias.push('.mdx')
+    // optionally `return config`
+  },
+
+  // or object
+  // merged using `webpack-merge` module
+  configureWebpack: {
+    resolve: {
+      alias: ['.mdx']
+    }
+  }
+}
+```
+
 ## publicFolder
 
 - Type: `string` `boolean`
