@@ -276,9 +276,18 @@ interface Opts {
 // e.g. creating one for client bundle and the other one for server bundle
 ```
 
+## publicFolder
+
+- Type: `string` `boolean`
+- Default: `public` 
+
+Serve static file in this folder. Use `false` to disable this behavior.
+
 ## devServer
 
-All options in [webpack-dev-server](https://webpack.js.org/configuration/dev-server/#devserver) are supported, plus some Poi-specific options:
+All options except for those CLI-only options in [webpack-dev-server](https://webpack.js.org/configuration/dev-server/#devserver) are supported.
+
+And plus some Poi-specific options:
 
 ### devServer.hotEntries
 
