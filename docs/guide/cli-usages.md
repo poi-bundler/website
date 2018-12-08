@@ -16,7 +16,7 @@ You should also add some npm scripts to your `package.json` to run it easier.
     "dev": "poi --serve"
   },
   "devDependencies": {
-    "poi": "latest"
+    "poi": "^12.0.0"
   }
 }
 ```
