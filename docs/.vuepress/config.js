@@ -16,7 +16,8 @@ module.exports = {
           '/guide/transforms',
           '/guide/frameworks',
           '/guide/environment-variables',
-          '/guide/custom-html-template'
+          '/guide/custom-html-template',
+          '/guide/using-plugins'
         ]
       },
       {
@@ -64,12 +65,16 @@ module.exports = {
           {
             text: 'Reason',
             link: '/guide/plugin-reason'
+          },
+          {
+            text: 'PWA',
+            link: '/guide/plugin-pwa'
           }
         ]
       },
       {
-        text: 'Plugin Dev Guide',
-        link: '/plugin-dev'
+        text: 'API',
+        link: '/api'
       }
     ],
     editLinks: true,

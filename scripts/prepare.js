@@ -7,7 +7,7 @@ async function fetchHtmlTemplate() {
 }
 
 async function fetchPluginReadme() {
-  const plugins = ['typescript', 'eslint', 'karma', 'reason']
+  const plugins = ['typescript', 'eslint', 'karma', 'reason', 'pwa']
 
   await Promise.all(plugins.map(async name => {
     const { data } = await axios.get(`https://raw.githubusercontent.com/egoist/poi/master/plugins/${name}/README.md`)

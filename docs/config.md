@@ -275,3 +275,14 @@ interface Opts {
 // Some plugin might supply custom opts for creating customized webpack config
 // e.g. creating one for client bundle and the other one for server bundle
 ```
+
+## devServer
+
+All options in [webpack-dev-server](https://webpack.js.org/configuration/dev-server/#devserver) are supported, plus some Poi-specific options:
+
+### devServer.hotEntries
+
+- Type: `string[]`
+- Default: `index`
+
+Make specific webpack entries hot-reloadable.
