@@ -69,6 +69,14 @@ module.exports = {
           {
             text: 'PWA',
             link: '/guide/plugin-pwa'
+          },
+          {
+            text: 'Puppet',
+            link: '/guide/plugin-puppet'
+          },
+          {
+            text: 'Vue Static',
+            link: '/guide/plugin-vue-static'
           }
         ]
       },
