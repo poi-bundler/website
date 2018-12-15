@@ -318,3 +318,9 @@ And plus some Poi-specific options:
 - Default: `index`
 
 Make specific webpack entries hot-reloadable.
+
+### plugins
+
+- Type: `string[] | { resolve: string, options?: any }[]`
+
+An array of plugins.

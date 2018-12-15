@@ -17,6 +17,18 @@ module.exports = {
 - `resolve`: A plugin package name or the path to it.
 - `options`: Optionally pass options to this plugin.
 
+When `options` is not needed, you can simply use a string:
+
+```js
+// poi.config.js
+module.exports = {
+  plugins: [
+    '@poi/plugin-typescript',
+    '../path/to/my/local/plugin'
+  ]
+}
+```
+
 ## Naming Convention
 
 Official plugins are published under `@poi` org on npm, like the `@poi/plugin-typescript` plugin.
