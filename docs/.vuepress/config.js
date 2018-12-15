@@ -36,6 +36,13 @@ module.exports = {
         children: [
           '/guide/proxying-api-requests'
         ]
+      },
+      {
+        title: 'Misc',
+        collapsable: false,
+        children: [
+          '/migration-guide/9-to-12'
+        ]
       }
     ],
     nav: [
