@@ -363,6 +363,7 @@ Open the dev server in your browser when bundle succeeded.
 ### devServer.proxy
 
 - Type: `string` `object` `function` 
+- CLI: `--proxy <string>`
 
 See [Proxying API Requests](./guide/proxying-api-requests.md).
 
