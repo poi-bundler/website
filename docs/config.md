@@ -364,6 +364,8 @@ Open the dev server in your browser when bundle succeeded.
 
 - Type: `string` `object` `function` 
 
+See [Proxying API Requests](./guide/proxying-api-requests.md).
+
 ### devServer.https
 
 - Type: `boolean` `object`
