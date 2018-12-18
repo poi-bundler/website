@@ -327,7 +327,14 @@ Server port.
 - Type: `boolean`
 - Default: `true`
 
-Enable hot reloading.
+Enables Hot Module Replacement.
+
+### devServer.hotOnly
+
+- Type: `boolean`
+- Default: `false`
+
+Enables Hot Module Replacement (see [`devServer.hot`](#devserver-hot)) without page refresh as fallback in case of build failures.
 
 ### devServer.hotEntries
 
@@ -335,6 +342,13 @@ Enable hot reloading.
 - Default: `index`
 
 Make specific webpack entries hot-reloadable.
+
+### devServer.historyApiFallback
+
+- Type: `boolean`
+- Default: `true`
+
+When using the [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/API/History), the `index.html` page will likely have to be served in place of any 404 responses. `devServer.historyApiFallback` is enable by default. Disable it by passing `false` here.
 
 ### devServer.open
 
