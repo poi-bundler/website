@@ -308,9 +308,26 @@ Serve static file in this folder. Use `false` to disable this behavior.
 
 ## devServer
 
-All options except for those CLI-only options in [webpack-dev-server](https://webpack.js.org/configuration/dev-server/#devserver) are supported.
+### devServer.host
 
-And plus some Poi-specific options:
+- Type: `string`
+- Default: `0.0.0.0`
+
+Server host.
+
+### devServer.port
+
+- Type: `string` `number`
+- Default: `4000`
+
+Server port.
+
+### devServer.hot
+
+- Type: `boolean`
+- Default: `true`
+
+Enable hot reloading.
 
 ### devServer.hotEntries
 
@@ -318,6 +335,33 @@ And plus some Poi-specific options:
 - Default: `index`
 
 Make specific webpack entries hot-reloadable.
+
+### devServer.open
+
+- Type: `boolean`
+- Default: `false`
+
+Open the dev server in your browser when bundle succeeded.
+
+### devServer.proxy
+
+- Type: `string` `object` `function` 
+
+### devServer.https
+
+- Type: `boolean` `object`
+
+### devServer.before
+
+- Type: `(app: Express) => void`
+
+Execute a function before our middlewares.
+
+### devServer.after
+
+- Type: `(app: Express) => void`
+
+Execute a function after our middlewares.
 
 ### plugins
 
