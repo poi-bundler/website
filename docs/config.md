@@ -377,7 +377,7 @@ Execute a function before our middlewares.
 
 Execute a function after our middlewares.
 
-### plugins
+## plugins
 
 - Type: `string[] | { resolve: string, options?: any }[]`
 
