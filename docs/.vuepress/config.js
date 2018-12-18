@@ -70,10 +70,6 @@ module.exports = {
             link: '/guide/plugin-karma'
           },
           {
-            text: 'Reason',
-            link: '/guide/plugin-reason'
-          },
-          {
             text: 'PWA',
             link: '/guide/plugin-pwa'
           },
