@@ -312,6 +312,7 @@ Serve static file in this folder. Use `false` to disable this behavior.
 
 - Type: `string`
 - Default: `0.0.0.0`
+- CLI: `--host <host>`
 
 Server host.
 
@@ -319,6 +320,7 @@ Server host.
 
 - Type: `string` `number`
 - Default: `4000`
+- CLI: `--port <port>`
 
 Server port.
 
@@ -354,6 +356,7 @@ When using the [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/
 
 - Type: `boolean`
 - Default: `false`
+- CLI: `-o, --open`
 
 Open the dev server in your browser when bundle succeeded.
 
