@@ -15,7 +15,6 @@ Here's a list of all built-in transforms:
 |YAML|`.yml` `.yaml`|`yaml-loader`|
 |TOML|`.toml`|`toml-loader`|
 |JSON|`.json`|🎉|
-|ReasonML|`.re` `.ml`|`@poi/bs-loader` `bs-platform`|
 |CSS|`.css`|🎉|
 |SCSS|`.scss`|`sass-loader` `node-sass`|
 |Sass|`.sass`|`sass-loader` `node-sass`|
@@ -74,46 +73,6 @@ Enable Flow support.
 - Default: `true`
 
 Enable TypeScript support, only apply to `.tsx?` files and `lang="ts"` block in `.vue` files. 
-
-## Reason/BuckleScript
-
-Use [Reason](https://reasonml.github.io/) in your JavaScript apps.
-
-Install the loader:
-
-```bash
-yarn add @poi/bs-loader bs-platform --dev
-```
-
-Then add a `bsconfig.json` in your project:
-
-```js
-{
-  "name": "whatever",
-  "sources": {
-    "dir": "src",
-    "subdirs": true
-  },
-  "package-specs": {
-    "module": "commonjs",
-    "in-source": true
-  },
-  "suffix": ".bs.js",
-  "bs-dependencies": [
-  ],
-  "warnings": {
-    "error": "+101"
-  },
-  "namespace": true,
-  "refmt": 3
-}
-```
-
-And the entry file `src/index.re`:
-
-```reason
-print_endline("Hello World");
-```
 
 ## TypeScript
 
