@@ -285,7 +285,7 @@ Instead of using [chainWebpack](#chainwebpack) you can provide an object or a fu
 ```js
 module.exports = {
   configureWebpack(config) {
-    config.resolve.alias.push('.mdx')
+    config.resolve.extensions.push('.mdx')
     // optionally `return config`
   },
 
@@ -293,7 +293,7 @@ module.exports = {
   // merged using `webpack-merge` module
   configureWebpack: {
     resolve: {
-      alias: ['.mdx']
+      extensions: ['.mdx']
     }
   }
 }
