@@ -124,11 +124,11 @@ const DefaultFileNames = {
 
 ### output.target
 
-- Type: `'browser' | 'electron'`
-- Default: `'browser'`
+- Type: `'web' | 'electron-renderer' | 'electron-main' | 'node' | 'node-webkit' | 'async-node' | 'webworker'`
+- Default: `'web'`
 - CLI: `--target <target>`
 
-Bundle target.
+Bundle [target](https://webpack.js.org/configuration/target/#target).
 
 ### output.html
 
