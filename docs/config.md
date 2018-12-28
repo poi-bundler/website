@@ -19,10 +19,10 @@ You can access `process.env.NODE_ENV` in the config file, its default value is t
 ## entry
 
 - Type: `string` `string[]` `object`
-- Default: `index` which means it will use `index.js` or `index.ts` by default.
+- Default: `pkg.source || 'index'`
 - CLI: `poi [...entries]`
 
-Specify the entry file(s).
+Specify the entry file(s). It defaults to `source` file in your package.json and fallbacks to `index` when it's not present.
 
 Note that the entres will be treated as files relative to current directory by default, if you want to use a npm package as entry, you need to prefix it with `module:`, like `module:object.assign`.
 
