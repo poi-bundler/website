@@ -146,5 +146,5 @@ That's it, now you can run `yarn dev` or `yarn build`.
 
 Releated links:
 
-- [Source code for this example](https://github.com/poi-bundler/examples/tree/master/examples/reason-app).
-- [Source code for Reason React example](https://github.com/poi-bundler/examples/tree/master/examples/reason-react-app).
+- [Source code for this example](https://github.com/poi-bundler/examples/tree/master/examples/reason-app)
+- [Source code for Reason React example](https://github.com/poi-bundler/examples/tree/master/examples/reason-react-app)
