@@ -10,7 +10,7 @@ Here's a list of all built-in transforms:
 |TypeScript|`.ts` `.tsx`|🎉|
 |Vue|`.vue`|`vue` `vue-template-compiler`|
 |CoffeeScript|`.coffee`|`coffee-loader` `coffeescript`|
-|ReasonML|`.re` `.ml`|`@poi/plugin-reason` `bs-platform`|
+|ReasonML|`.re` `.ml`|`bs-platform`|
 |GraphQL|`.gql` `.graphql`|`graphql-tag`|
 |YAML|`.yml` `.yaml`|`yaml-loader`|
 |TOML|`.toml`|`toml-loader`|
