@@ -140,7 +140,7 @@ Before running your app, you also need a `bsconfig.json` which will be used by t
 }
 ```
 
-Basically when you import a `.re` or `.ml` file you can actually importing the generated `.bs.js` file.
+Basically when you import a `.re` or `.ml` file you are actually importing the generated `.bs.js` file.
 
 That's it, now you can run `yarn dev` or `yarn build`.
 
