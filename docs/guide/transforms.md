@@ -87,7 +87,7 @@ But don't worry, we always get you covered. You can use [@poi/plugin-typescript]
 
 ## Reason and OCaml
 
-You can use Reason and OCaml modules (`.re` or `.ml` files) in your app with no configs. The only requirement is that you must install [bs-platform](https://yarnpkg.com/en/package/bs-platform) as a dev dependency in your project and run it in parallel with Poi.
+You can use [Reason](https://reasonml.github.io/) and OCaml modules (`.re` or `.ml` files) in your app with no configs. The only requirement is that you must install [bs-platform](https://yarnpkg.com/en/package/bs-platform) as a dev dependency in your project and run it in parallel with Poi.
 
 __📝 package.json__:
 
