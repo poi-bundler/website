@@ -145,7 +145,7 @@ Basically when you import a `.re` or `.ml` file you are actually importing the g
 
 That's it, now you can run `yarn dev` or `yarn build`.
 
-Releated links:
+Related links:
 
 - [Source code for this example](https://github.com/poi-bundler/examples/tree/master/examples/reason-app)
 - [Source code for Reason React example](https://github.com/poi-bundler/examples/tree/master/examples/reason-react-app)
