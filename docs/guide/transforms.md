@@ -87,7 +87,7 @@ But don't worry, we always get you covered. You can use [@poi/plugin-typescript]
 
 ## Reason and OCaml
 
-You can use [Reason](https://reasonml.github.io/) and OCaml modules (`.re` or `.ml` files) in your app with no configs. The only requirement is that you must install [bs-platform](https://yarnpkg.com/en/package/bs-platform) as a dev dependency in your project and run it in parallel with Poi.
+You can use [Reason](https://reasonml.github.io/) and OCaml modules (`.re` or `.ml` files) in your app with no configs. The only requirement is that you must install [bs-platform](https://yarnpkg.com/en/package/bs-platform) as a dev dependency in your project and run it with Poi.
 
 __📝 package.json__:
 
@@ -96,12 +96,13 @@ __📝 package.json__:
   "private": true,
   "source": "src/index.re",
   "scripts": {
-    "build": "run-p make-world build-app",
     "dev": "run-p watch-world serve-app",
+    "build": "run-s make-world build-app",
     "make-world": "bsb -make-world",
     "watch-world": "bsb -make-world -w",
-    "build-app": "poi --prod",
-    "serve-app": "poi --serve"
+    "clean-world": "bsb -clean-world",
+    "serve-app": "poi --serve",
+    "build-app": "poi --prod"
   },
   "devDependencies": {
     "bs-platform": "^4.0.14",
