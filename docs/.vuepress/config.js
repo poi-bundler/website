@@ -80,10 +80,6 @@ module.exports = {
           {
             text: 'Vue Static',
             link: '/guide/plugin-vue-static'
-          },
-          {
-            text: 'Reason',
-            link: '/guide/plugin-reason'
           }
         ]
       },

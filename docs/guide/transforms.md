@@ -84,3 +84,67 @@ Our default Babel preset will use [`@babel/preset-typescript`](https://babeljs.i
 - You want type-checking at compile time.
 
 But don't worry, we always get you covered. You can use [@poi/plugin-typescript](./plugin-typescript.md) instead to transpile TypeScript with the official `typescript` compiler.
+
+## Reason and OCaml
+
+You can use Reason and OCaml modules (`.re` or `.ml` files) in your app with no configs. The only requirement is that you must install [bs-platform](https://yarnpkg.com/en/package/bs-platform) as a dev dependency in your project and run it in parallel with Poi.
+
+__📝 package.json__:
+
+```json
+{
+  "private": true,
+  "source": "src/index.re",
+  "scripts": {
+    "build": "run-p make-world build-app",
+    "dev": "run-p watch-world serve-app",
+    "make-world": "bsb -make-world",
+    "watch-world": "bsb -make-world -w",
+    "build-app": "poi --prod",
+    "serve-app": "poi --serve"
+  },
+  "devDependencies": {
+    "bs-platform": "^4.0.14",
+    "npm-run-all": "^4.1.5",
+    "poi": "^12.2.12"
+  }
+}
+```
+
+__📝 src/index.re__:
+
+```reason
+print_endline("Hello World!");
+```
+
+Before running your app, you also need a `bsconfig.json` which will be used by the `bsb` command:
+
+```json
+{
+  "name": "whatever",
+  "sources": {
+    "dir": "src",
+    "subdirs": true
+  },
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bsc-flags": ["-bs-super-errors"],
+  "warnings": {
+    "error": "+101"
+  },
+  "namespace": true,
+  "refmt": 3
+}
+```
+
+Basically when you import a `.re` or `.ml` file you can actually importing the generated `.bs.js` file.
+
+That's it, now you can run `yarn dev` or `yarn build`.
+
+Releated links:
+
+- [Source code for this example](https://github.com/poi-bundler/examples/tree/master/examples/reason-app).
+- [Source code for Reason React example](https://github.com/poi-bundler/examples/tree/master/examples/reason-react-app).
