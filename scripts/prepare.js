@@ -11,7 +11,18 @@ async function fetchPluginReadme() {
 
   await Promise.all(plugins.map(async name => {
     const { data } = await axios.get(`https://raw.githubusercontent.com/egoist/poi/master/plugins/${name}/README.md`)
-    await fs.writeFile(`docs/guide/plugin-${name}.md`, `---\nsidebar: auto\n---\n\n${data}`, 'utf8')
+    const editLink = `https://github.com/egoist/poi/blob/master/plugins/${name}/README.md`
+    await fs.writeFile(`docs/guide/plugin-${name}.md`, `---\nsidebar: auto\nactualEditLink: ${editLink}\n---\n\n${data}
+    
+<script>
+export default {
+  mounted() {
+    const el = document.querySelector('.edit-link a')
+    el.href = this.$page.frontmatter.actualEditLink
+  }
+}
+</script>
+    `, 'utf8')
   }))
 }
 
