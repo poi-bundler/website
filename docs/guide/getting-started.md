@@ -80,3 +80,5 @@ So far we get:
 - Automatic transpilation and bundling (with [webpack](https://webpack.js.org/) and [babel](https://babeljs.io/))
 - Hot code reloading
 - Static file serving. `./public/` is mapped to `/`
+
+You can also check out [this repo](https://github.com/poi-bundler/examples) for more examples.
