@@ -29,7 +29,7 @@ By default Poi bundles your app in `development` mode, so running `poi` alone do
 
 But you can combine it with `--serve` flag which starts a dev server to serve the development bundle with hot reloading support.
 
-There's also `--prod, --production` flags which set the mode to `production` so that Poi will generate an optimized bundle for production use. And `--test` flag which sets the mode to `test`, you can combine it with some plugins like [Karma](./plugin-karma.md) to run your tests.
+There's also `--prod, --production` flags which set the mode to `production` so that Poi will generate an optimized bundle for production use. And `--test` flag which sets the mode to `test`, for convenience we also set the mode to `test` for `test` and `test:*` commands, for example the [Karma](./plugin-karma.md) plugin injected the `poi test:unit` command that you can use to run unit tests.
 
 ## CLI Args & Flags
 
