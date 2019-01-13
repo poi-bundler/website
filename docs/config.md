@@ -299,6 +299,8 @@ module.exports = {
 }
 ```
 
+When using an object, it's merged with our internal webpack config by [webpack-merge](https://github.com/survivejs/webpack-merge).
+
 ## publicFolder
 
 - Type: `string` `boolean`
