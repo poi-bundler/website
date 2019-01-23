@@ -385,6 +385,12 @@ Execute a function before our middlewares.
 
 Execute a function after our middlewares.
 
+### devServer.headers
+
+- Type: `object`
+
+Set custom headers on all responses.
+
 ## plugins
 
 - Type: `string[] | { resolve: string, options?: any }[]`

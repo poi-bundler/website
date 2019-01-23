@@ -34,6 +34,12 @@ Get the mode that the bundler is running under.
 
 The CLI instance, created from [CAC](https://github.com/cacjs/cac).
 
+## `command`
+
+- Type: `CAC.Command`
+
+The default command.
+
 ## `config`
 
 - Type: `object`
@@ -76,23 +82,6 @@ Create a webpack-chain instance.
 
 Create a webpack compiler from raw webpack config.
 
-## `hook('createCLI', handler: Handler)`
-
-```ts
-type Handler = (opts: Opts) => void
-
-interface Opts {
-  /** The default Poi command */
-  command: Command
-  /** CLI args */
-  args: Args
-}
-
-interface Args {
-  has: (arg: string) => boolean
-  get: (arg: string) => any
-}
-```
 
 ## `hook('createWebpackChain', handler: Handler)`
 

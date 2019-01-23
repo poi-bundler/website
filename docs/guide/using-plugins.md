@@ -81,10 +81,11 @@ module.exports = {
 A plugin for Poi is an object which consists of following properties:
 
 - `name`: Plugin name.
+- `cli`: __Optional__. A method that is used to extend CLI. 
 - `apply`: __Optional__. A method that is used to extend core API.
 - `filterPlugins`: __Optional__. A method that is used to remove exiting plugins or add new plugins.
 
-`apply` method accepts two arguments:
+`apply` and `cli` methods accept two arguments:
 
 - `api`: The [Poi instance](../api.md).
 - `options`: The `options` that is passed to this plugin from config file.
