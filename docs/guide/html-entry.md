@@ -8,6 +8,8 @@ Luckily, you can do this with Poi too:
 poi index.html --serve
 ```
 
+<small>*It requires Poi 12.5.0 or above.*</small>
+
 And you're good to go. 
 
 <!--inject:start-->
