@@ -1,4 +1,4 @@
-# Using HTML Entrypoint
+# Using HTML Entrypoint <Badge text="beta" type="warn"/>
 
 When you're using JavaScript files as entrypoints, Poi will inject generated files into an HTML template and then output that HTML template as `index.html`. However using an HTML file as entrypoint may be more straight-forward to many of you.
 
