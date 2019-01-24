@@ -9,6 +9,8 @@ actionLink: /guide/getting-started
 
 Run `poi --serve --open` in the project and you will be automatically redirected to `http://localhost:4000`.
 
+By default Poi uses `index.js` or `index.ts` as entry file, however you can also [use `index.html`](./guide/html-entry.md).
+
 <div class="footer">
 MIT Licensed | Copyright © 2016-Present.
   <div class="author">
