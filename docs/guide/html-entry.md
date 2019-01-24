@@ -1,6 +1,6 @@
 # Using HTML Entrypoint
 
-When you're using JavaScript files as entrypoints, Poi will inject generated files in to an HTML template and then output that HTML template as `index.html`. However using an HTML file as entrypoint may be more straight-forward to many of you.
+When you're using JavaScript files as entrypoints, Poi will inject generated files into an HTML template and then output that HTML template as `index.html`. However using an HTML file as entrypoint may be more straight-forward to many of you.
 
 Luckily, you can do this with Poi too:
 
