@@ -17,6 +17,7 @@ module.exports = {
           '/guide/frameworks',
           '/guide/environment-variables',
           '/guide/custom-html-template',
+          '/guide/html-entry',
           '/guide/using-plugins'
         ]
       },
