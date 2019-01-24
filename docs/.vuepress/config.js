@@ -87,6 +87,10 @@ module.exports = {
       {
         text: 'API',
         link: '/api'
+      },
+      {
+        text: 'Twitter',
+        link: 'https://twitter.com/poi__js'
       }
     ],
     editLinks: true,
