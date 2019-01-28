@@ -172,7 +172,7 @@ The template file for generated HTML file, supporting EJS syntax.
 
 Automatically inject webpack assets to `<head>` and `<body>`.
 
-### pages
+## pages
 
 Build the app in multi-page mode. Each "page" should have a corresponding JavaScript entry file. The value should be an object where the key is the name of the entry, and the value is either:
 
