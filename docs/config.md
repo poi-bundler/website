@@ -172,6 +172,32 @@ The template file for generated HTML file, supporting EJS syntax.
 
 Automatically inject webpack assets to `<head>` and `<body>`.
 
+### pages
+
+Build the app in multi-page mode. Each "page" should have a corresponding JavaScript entry file. The value should be an object where the key is the name of the entry, and the value is either:
+
+- An object that specifies its `entry`, `template`, `filename`, `title` and `chunks` (all optional except entry). Any other properties added beside those will also be passed directly to html-webpack-plugin, allowing user to customize said plugin.
+- Or a string specifying its `entry`.
+
+```js
+module.exports = {
+  pages: {
+    // Generate index.html using specified entry
+    index: './src/index.js',
+    // Generate foo.html
+    foo: {
+      entry: './src/foo.js',
+      // chunks to include on this page, by default includes
+      // extracted common chunks, vendor chunks and itself
+      chunks: ['chunk-vendors', 'chunk-common', 'foo']
+      // ...other options
+    }
+  }
+}
+```
+
+When using this option, [`entry`](#entry) and [`output.html`](#output-html) will no longer take effects.
+
 ## babel
 
 ### babel.jsx
