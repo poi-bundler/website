@@ -36,11 +36,11 @@ When set it will override the [entry](config.md#entry) property in config file.
 
 ## Inspect Webpack Config
 
-To print webpack config as a string in your terminal, you can add a `--inspectWebpack` flag to the command you run:
+To print webpack config as a string in your terminal, you can add a `--inspect-webpack` flag to the command you run:
 
 ```bash
-poi dev foo.js --inspectWebpack
-poi build --inspectWebpack
+poi dev foo.js --inspect-webpack
+poi build --inspect-webpack
 ```
 
 ## Progress Bar
