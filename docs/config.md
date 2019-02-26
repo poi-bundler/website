@@ -375,7 +375,7 @@ Make specific webpack entries hot-reloadable.
 
 ### devServer.historyApiFallback
 
-- Type: `boolean`
+- Type: `boolean` `object`
 - Default: `true`
 
 When using the [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/API/History), the `index.html` page will likely have to be served in place of any 404 responses. `devServer.historyApiFallback` is enable by default. Disable it by passing `false` here. By passing an object this behavior can be controlled further using options like rewrites. Check [webpack-dev-server documentation](https://webpack.js.org/configuration/dev-server/#devserverhistoryapifallback) for more information.
