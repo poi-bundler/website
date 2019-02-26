@@ -330,7 +330,7 @@ When using an object, it's merged with our internal webpack config by [webpack-m
 ## publicFolder
 
 - Type: `string` `boolean`
-- Default: `public` 
+- Default: `public`
 
 Serve static file in this folder. Use `false` to disable this behavior.
 
@@ -378,7 +378,7 @@ Make specific webpack entries hot-reloadable.
 - Type: `boolean`
 - Default: `true`
 
-When using the [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/API/History), the `index.html` page will likely have to be served in place of any 404 responses. `devServer.historyApiFallback` is enable by default. Disable it by passing `false` here.
+When using the [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/API/History), the `index.html` page will likely have to be served in place of any 404 responses. `devServer.historyApiFallback` is enable by default. Disable it by passing `false` here. By passing an object this behavior can be controlled further using options like rewrites. Check [webpack-dev-server documentation](https://webpack.js.org/configuration/dev-server/#devserverhistoryapifallback) for more information.
 
 ### devServer.open
 
@@ -390,7 +390,7 @@ Open the dev server in your browser when bundle succeeded.
 
 ### devServer.proxy
 
-- Type: `string` `object` `function` 
+- Type: `string` `object` `function`
 - CLI: `--proxy <string>`
 
 See [Proxying API Requests](./guide/proxying-api-requests.md).
