@@ -35,7 +35,8 @@ module.exports = {
         title: 'Development',
         collapsable: false,
         children: [
-          '/guide/proxying-api-requests'
+          '/guide/proxying-api-requests',
+          '/guide/customizing-webpack-config'
         ]
       },
       {
