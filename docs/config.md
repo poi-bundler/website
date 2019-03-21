@@ -225,6 +225,14 @@ Transpile specific modules in Babel transpilation process. By default Babel only
 
 Whether to extract CSS into standalone CSS files.
 
+### css.sourceMap
+
+- Type: `boolean`
+- Default: [`output.sourceMap`](#output-sourcemap)
+- Since: `12.5.7`
+
+Whether to enable source map for CSS files.
+
 ### css.loaderOptions
 
 - Type: `LoaderOptions`
