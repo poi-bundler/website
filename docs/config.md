@@ -377,9 +377,9 @@ Enables Hot Module Replacement (see [`devServer.hot`](#devserver-hot)) without p
 ### devServer.hotEntries
 
 - Type: `string[]`
-- Default: `index`
+- Default: `[]`
 
-Make specific webpack entries hot-reloadable.
+Make specific webpack entries hot-reloadable, by default Poi will make all entries hot-reloadable.
 
 ### devServer.historyApiFallback
 
