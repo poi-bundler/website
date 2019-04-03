@@ -82,6 +82,10 @@ module.exports = {
           {
             text: 'Vue Static',
             link: '/guide/plugin-vue-static'
+          },
+          {
+            text: 'Astroturf',
+            link: '/guide/plugin-astroturf'
           }
         ]
       },

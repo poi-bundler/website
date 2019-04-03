@@ -15,7 +15,8 @@ async function fetchPluginReadme() {
     'karma',
     'pwa',
     'puppet',
-    'vue-static'
+    'vue-static',
+    'astroturf'
   ]
 
   await Promise.all(
