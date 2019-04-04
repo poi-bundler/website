@@ -6,7 +6,7 @@ Here's a list of all built-in transforms:
 
 |Type|Associated Extension(s)|Required Dependencie(s)|
 |---|---|---|
-|JavaScript|`.js` `.jsx`|🎉|
+|JavaScript|`.mjs` `.js` `.jsx`|🎉|
 |TypeScript|`.ts` `.tsx`|🎉|
 |Vue|`.vue`|`vue` `vue-template-compiler`|
 |CoffeeScript|`.coffee`|`coffee-loader` `coffeescript`|
@@ -31,7 +31,8 @@ When Babel config file was not found in your project root, Poi will use a defaul
 
 - ES2015 features
 - [Async/await](https://github.com/tc39/ecmascript-asyncawait) (ES2017)
-- [JSX](https://facebook.github.io/react/docs/introducing-jsx.html) syntax (React, Vue or custom JSX pragma)
+- [JSX](https://facebook.github.io/react/docs/introducing-jsx.html) syntax (React, Preact, Vue or custom JSX pragma)
+- Automatically import `react` or `preact` if you're using React / Preact JSX.
 - Strip [Flow](https://flow.org/) and [TypeScript](http://www.typescriptlang.org/) types (Does not type-check its input)
 - [Object Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread) (ES2018)
 - [Class Fields and Static Properties](https://github.com/tc39/proposal-class-public-fields) (part of stage 3 proposal)
@@ -57,7 +58,7 @@ module.exports = {
 
 #### options.jsx
 
-- Type: `'react' | 'vue' | string`
+- Type: `'react' | 'preact' | 'vue' | string`
 - Default: `'react'`
 
 #### options.flow

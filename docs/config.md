@@ -204,7 +204,7 @@ When using this option, [`entry`](#entry) and [`output.html`](#output-html) will
 
 - Type: `string`
 - Default: `react`
-- Values: `react` `vue` `h` or any JSX pragma
+- Values: `react` `preact` `vue` `h` or any JSX pragma
 - CLI: `--jsx <jsx>`
 
 Set JSX syntax. This ONLY works with our default Babel preset, which means it won't work if you're using custom Babel config file like `babel.config.js`.
