@@ -28,7 +28,8 @@ module.exports = {
           '/guide/adding-stylesheets',
           '/guide/adding-css-modules',
           '/guide/pre-processing-css',
-          '/guide/post-processing-css'
+          '/guide/post-processing-css',
+          '/guide/using-the-public-folder'
         ]
       },
       {
