@@ -4,7 +4,7 @@ sidebar: auto
 
 # Config Reference
 
-Poi will search `poi.config.js` `.poirc` `.poirc.json` or `poi` property in `package.json` from your project.
+Poi will search `poi.config.{ts,js}` `.poirc` `.poirc.json` or `poi` property in `package.json` from your project.
 
 The config is basically a pure object containing following properties.
 
@@ -12,6 +12,25 @@ The config is basically a pure object containing following properties.
 module.exports = {
   // ...config
 }
+```
+
+TypeScript is also supported if you're using the `.ts` extension:
+
+```ts
+import { Config } from 'poi'
+
+const config: Config = {
+  entry: 'src/index.js'
+}
+
+export default config
+```
+
+Be sure to install `@types/poi` and `ts-node` in your project first:
+
+```bash
+yarn add @types/poi ts-node typescript --dev
+yarn poi --serve -r ts-node/register
 ```
 
 You can access `process.env.NODE_ENV` in the config file, its default value is the same as CLI [mode](./guide/cli-usages.md#modes).
