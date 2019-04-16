@@ -1,11 +1,22 @@
 # Environment Variables
 
-Your can use `process.env.NODE_ENV` in the app code to tell whether it's a production build or not. We also allow you use consume custom environment variables from `.env` files.
+## Predefined Environment Variables 
+
+- `NODE_ENV`: `production`, `development` or `test`
+- `PUBLIC_URL`: The value of [output.publicUrl](../config.md#output-publicurl).
+
+For example, you can use `process.env.NODE_ENV` in the app code to tell whether it's a production build or not. We also allow you use consume custom environment variables from `.env` files.
 
 ```js
 if (process.env.NODE_ENV === 'production') {
   console.log('this is the production build!')
 }
+```
+
+Or use `envs.PUBLIC_URL` in [`public/index.html`](./custom-html-template.md) to reference static files in [public folder](./using-the-public-files.md):
+
+```html
+<img src="<%= envs.PUBLIC_URL %>/image.png" />
 ```
 
 ## Adding Environment Variables In `.env`
