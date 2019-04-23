@@ -27,6 +27,35 @@ module.exports = {
 }
 ```
 
+## Merge Custom Webpack Config
+
+Besides the `chainWebpack` option, you can also use the `configureWebpack` option to merge your custom webpack config with the internal one:
+
+```js
+module.exports = {
+  configureWebpack: {
+    resolve: {
+      alias: {
+        'foo': './src/foo'
+      }
+    }
+  }
+}
+```
+
+We merge the config by using the [webpack-merge](https://github.com/survivejs/webpack-merge) module.
+
+`configureWebpack` can also be a function:
+
+```js
+module.exports = {
+  configureWebpack(config) {
+    config.resolve.alias.foo = './src/foo'
+    return config
+  }
+}
+```
+
 ## A Note for CSS Loaders
 
 Modifying the config for CSS Loaders is a bit more complex, because it uses webpack's [module.rule.oneOf](https://webpack.js.org/configuration/module/#ruleoneof) option to support CSS modules, normal CSS and Vue single file components.
