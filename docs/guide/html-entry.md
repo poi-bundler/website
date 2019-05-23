@@ -15,7 +15,7 @@ And you're good to go.
 <!--inject:start-->
 ## Features
 
-### Process local scripts and styles
+### Process local files
 
 ```html
 <link rel="stylesheet" href="./style.css">
@@ -32,6 +32,8 @@ It processes certain HTML attributes:
 - `<image>`: `xlink:href`
 - `<video>`: `src` `poster`
 - `<source>`: `src`
+- `<link>`: `href`
+- `<script>`: `src`
 
 ### Reloading
 
