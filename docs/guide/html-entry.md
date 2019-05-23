@@ -19,6 +19,7 @@ And you're good to go.
 
 ```html
 <link rel="stylesheet" href="./style.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es2016"></script>
 <script src="./main.js"></script>
 ```
 
