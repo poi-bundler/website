@@ -8,7 +8,7 @@ Poi uses a module called [webpack-chain](https://github.com/neutrinojs/webpack-c
 
 You can run Poi with the CLI flag `--inspect-webpack` to understand how the config is created using the webpack-chain API, Poi will open the webpack config with instructions in your default editor:
 
-![inspect webpack example](https://user-images.githubusercontent.com/8784712/59977315-629bf600-9602-11e9-80aa-e2a2cf5a4360.png
+![inspect webpack example](https://user-images.githubusercontent.com/8784712/59977315-629bf600-9602-11e9-80aa-e2a2cf5a4360.png)
 
 As you can see in the screenshot, the `vue-loader` is added by `config.module.rule('vue').use('vue-loader')`, in order to tweak the options for `vue-loader`, you can:
 
