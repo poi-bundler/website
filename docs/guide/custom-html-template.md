@@ -1,6 +1,6 @@
 # Custom HTML Template
 
-When you're using JavaScript entrypoinys, `index.html` will be generated from a HTML template file, this is the [default one](https://github.com/egoist/poi/blob/master/core/poi/lib/webpack/default-template.html) we use:
+When you're using JavaScript entrypoints, `index.html` will be generated from a HTML template file, this is the [default one](https://github.com/egoist/poi/blob/master/core/poi/lib/webpack/default-template.html) we use:
 
 <<< @/data/default-template.html
 
