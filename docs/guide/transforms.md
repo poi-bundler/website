@@ -27,7 +27,7 @@ Here's a list of all built-in transforms:
 
 JavaScript is transpiled by [Babel](https://babeljs.io/docs/en) which is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in old browsers or environments.
 
-When Babel config file was not found in your project root, Poi will use a default [Babel preset](https://github.com/egoist/poi/blob/master/packages/poi/lib/babel/preset.js) which includes everything needed for building a modern web app:
+When Babel config file was not found in your project root, Poi will use a default [Babel preset](https://github.com/egoist/poi/blob/master/core/poi/lib/babel/preset.js) which includes everything needed for building a modern web app:
 
 - ES2015 features
 - [Async/await](https://github.com/tc39/ecmascript-asyncawait) (ES2017)
