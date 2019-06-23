@@ -16,7 +16,7 @@ The template file uses [lodash.template](https://lodash.com/docs/4.17.11#templat
 
 ### html
 
-`html` is basically the `html` option you passed [here](../config.md#html).
+`html` is basically the `html` option you passed [here](../config.md#output-html).
 
 ### pkg
 
