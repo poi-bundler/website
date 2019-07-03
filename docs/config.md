@@ -234,6 +234,20 @@ Set JSX syntax. This ONLY works with our default Babel preset, which means it wo
 
 Transpile specific modules in Babel transpilation process. By default Babel only transpiles files outside `node_modules` directory.
 
+### babel.babelrc
+
+- Type: `boolean`
+- CLI: `--no-babelrc`
+
+Enable or disable `.babelrc` files.
+
+### babel.configFile
+
+- Type: `boolean`
+- CLI:  `--no-babel-config-file`
+
+Enable or disable `babel.config.js`.
+
 ## css
 
 ### css.extract
