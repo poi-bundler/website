@@ -351,7 +351,7 @@ Instead of using [chainWebpack](#chainwebpack) you can provide an object or a fu
 
 ```js
 module.exports = {
-  configureWebpack(config) {
+  chainWebpack(config) {
     config.resolve.extensions.push('.mdx')
     // optionally `return config`
   },
