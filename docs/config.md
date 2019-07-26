@@ -162,7 +162,7 @@ The options you provide here will also be available under `html` variable in you
 #### output.html.title
 
 - Type: `string`
-- Default: `pkg.title`
+- Default: `pkg.productName || pkg.name || 'Poi App'`
 - CLI: `--html.title <title>`
 
 Document title.
