@@ -230,7 +230,7 @@ Set JSX syntax. This ONLY works with our default Babel preset, which means it wo
 
 ### babel.transpileModules
 
-- Type: `string[]` `string`
+- Type: `Array<string | RegExp>`
 
 Transpile specific modules in Babel transpilation process. By default Babel only transpiles files outside `node_modules` directory.
 
