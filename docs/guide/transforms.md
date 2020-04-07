@@ -75,6 +75,32 @@ Enable Flow support.
 
 Enable TypeScript support, only apply to `.tsx?` files and `lang="ts"` block in `.vue` files. 
 
+#### options.env
+
+- Type: `object`
+- Default: [source code](https://github.com/egoist/poi/blob/19a8bf3a913a0854f8d9ca5120747587eb43c7ed/core/poi/lib/babel/preset.js#L46-L58)
+
+Overriding options for [`@babel/preset-env`](https://babeljs.io/docs/en/babel-preset-env).
+
+By default Poi transforms your code to be compatible with IE9, you can customize it if you want:
+
+```js
+// babel.config.js
+const env = process.env.BABEL_ENV || process.env.NODE_ENV
+const isTest = env === 'test'
+
+// Setting `targets` to undefined to make it use your browserslist config automatically
+const targets = isTest ? { node: 'current' } : undefined
+
+module.exports = {
+  presets: [
+    ['poi/babel', {
+      env: { targets }
+    }]
+  ]
+}
+```
+
 ## TypeScript
 
 Our default Babel preset will use [`@babel/preset-typescript`](https://babeljs.io/docs/en/babel-preset-typescript) to transpile your TypeScript files, however sometimes you just can't use it:
