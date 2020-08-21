@@ -326,6 +326,13 @@ Transpiled code:
 let bar = 123
 ```
 
+## reactRefresh
+
+- Type: `boolean`
+- CLI: `--react-refresh`
+
+Enable React Refresh
+
 ## chainWebpack
 
 - Type: `(config: WebpackChain, opts: Opts) => void`

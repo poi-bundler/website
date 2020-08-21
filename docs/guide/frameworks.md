@@ -6,36 +6,14 @@ How to use Poi with other frameworks and libraries.
 
 Poi works out of the box in a React app, for example a React app that is created by facebooks's [create-react-app](https://github.com/facebook/create-react-app).
 
-### Hot Reloading Support
+### React Refresh Support
 
-To add hot reloading support, simply add [react-hot-loader](https://github.com/gaearon/react-hot-loader) to your Babel config:
+To enable react-refresh support, simply set  `reactRefresh` to `true` at your Poi config:
 
 ```js
-// babel.config.js
 module.exports = {
-  presets: [
-    // Our default preset
-    'poi/babel'
-  ],
-  plugins: [
-    // This adds Hot Reloading support
-    'react-hot-loader/babel'
-  ]
+  reactRefresh: true
 }
-```
-
-_(Don't forget to install react-hot-loader first: `yarn add react-hot-loader --dev`)_
-
-Then mark your root component as hot-exported:
-
-```js
-// index.js
-import React from 'react'
-import { hot } from 'react-hot-loader'
-
-const App = () => <div>Hello World!</div>
-
-export default hot(module)(App)
 ```
 
 ## Vue
