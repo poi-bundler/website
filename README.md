@@ -1,4 +1,4 @@
-# Poi
+# Poi - must try once
 
 Check out the main Poi repo here: https://github.com/egoist/poi
 
