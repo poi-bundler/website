@@ -1,10 +1,10 @@
 # Poi
 
-Check out the main Poi repo here: https://github.com/egoist/poi
+This repo contains the website code for Poi. You can check out the main Poi repository at the link below: 
 
-This repo contains the website code for Poi.
+https://github.com/egoist/poi
 
-## Developing docs
+## Developing Docs
 
 ```bash
 yarn 
