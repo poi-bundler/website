@@ -10,3 +10,4 @@ This repo contains the website code for Poi.
 yarn 
 yarn dev
 ```
+you will not find  everywhere this kinds of code so please check out 
