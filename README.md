@@ -1,8 +1,8 @@
 # Poi
 
-Check out the main Poi repo here: https://github.com/egoist/poi
+Check out the main Poi repository by clicking this link: https://github.com/egoist/poi
 
-This repo contains the website code for Poi.
+This repository contains the website code for Poi.
 
 ## Developing docs
 
