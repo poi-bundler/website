@@ -10,3 +10,5 @@ This repo contains the website code for Poi.
 yarn 
 yarn dev
 ```
+
+Use at own risk.
