@@ -7,6 +7,7 @@
     "prebuild": "npm run prepare",
     "prepare": "node scripts/prepare"
   },
+  Improved 
   "devDependencies": {
     "axios": "^0.18.0",
     "fs-extra": "^7.0.0",
