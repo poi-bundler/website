@@ -1,4 +1,4 @@
-# Poi AN AMAZING
+# POI AN AMAZING
 
 Check out the main Poi repo here: https://github.com/egoist/poi
 
