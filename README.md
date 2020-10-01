@@ -1,6 +1,6 @@
 # Poi
 
-If there is something wrong with the content on that web site,
+-If there is something wrong with the content on that web site,
 feel free to
 [file an issue with this repository](https://github.com/poi-bundler/website/issues),
 or formulate a pull request.
