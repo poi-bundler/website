@@ -1,4 +1,4 @@
-# Poi
+# Poi - An amazing website 
 
 Check out the main Poi repo here: https://github.com/egoist/poi
 
